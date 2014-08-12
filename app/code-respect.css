@@ -3,6 +3,8 @@ button.code-respect {
   float: right;
   width: 21px;
   height: 21px;
-  margin: 0;
+  margin: 5px;
   padding: 0;
+  background: transparent;
+  border: 1px solid #333;
 }
