@@ -8,3 +8,15 @@ button.code-respect {
   background: transparent;
   border: 1px solid #333;
 }
+
+#code-respect-code {
+  position: fixed;
+  z-index: 10;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  background-color: #eee;
+  text-align: left;
+  overflow: scroll;
+}
