@@ -10,8 +10,7 @@
     "default_title": "Code-Respect"
   },
   "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "background": {
     "scripts": ["background.js"],
