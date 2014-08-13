@@ -1,11 +1,12 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-
-  chrome.tabs.executeScript({
-    file: 'code-respect-inject.js'
-  });
-});
-
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
+
+  if (request.popupMessage == "injectContentScripts") {
+    chrome.tabs.executeScript({
+      file: 'code-respect-inject.js'
+    });
+
+    sendResponse({ response: "success" });
+  }
 
   if (request.codeRespectRequest == "codeRespectInject") {
 
@@ -27,5 +28,3 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
     sendResponse({ response: "success" });
   }
 });
-
-
