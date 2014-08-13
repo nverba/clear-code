@@ -1,19 +1,34 @@
-var elements = document.getElementsByTagName("pre");
-var pre  = document.createElement('pre');
-var code = document.createElement('code');
+var elements  = document.getElementsByTagName('pre');
+var container = document.createElement('div');
+container.id  = 'code-respect-container';
 
-pre.id  = 'code-respect-pre';
-pre.style.display = 'none';
-code.id = 'code-respect-code';
-pre.appendChild(code);
-document.body.appendChild(pre);
+
+container.innerHTML = "" +
+"<header id='code-respect-header'>" +
+  "<button id='code-respect-pre-hide'>X</button>" +
+"</header>" +
+"<pre id='code-respect-pre'>" +
+  "<code id='code-respect-code'></code>" +
+"</pre>";
+
+document.body.appendChild(container);
+
+code = document.getElementById('code-respect-code');
+pre  = document.getElementById('code-respect-pre');
+hide = document.getElementById('code-respect-pre-hide');
+
+hide.onclick = function (event) {
+  container.style.display = 'none';
+  event.preventDefault();
+};
 
 function openCode(element) {
-  code.innerText = js_beautify(element.innerText);
-  pre.style.display = 'block';
+  code.innerHTML = element.innerHTML;
+  container.style.display = 'block';
+  hljs.highlightBlock(code);
 }
 
-for (var i=0, max=elements.length; i < max; i++) {
+for (var i=0, max=elements.length; i < max - 1; i++) {
   injectButton(elements[i]);
 }
 
