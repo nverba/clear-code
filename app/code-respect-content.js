@@ -2,6 +2,8 @@ var elements = document.getElementsByTagName('pre');
 var iframe = document.createElement('iframe');
     iframe.id  = 'code-respect-frame';
     iframe.src = chrome.extension.getURL("code-respect-frame.html");
+    iframe.scrolling = "no";
+    iframe.draggable = 'true';
     iframe.style.display = 'none';
 
 document.body.appendChild(iframe);

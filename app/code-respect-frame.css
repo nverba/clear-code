@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 @font-face {
   font-family: "source code pro";
   src: url("fonts/SourceCodePro-Regular.ttf");
@@ -8,11 +12,12 @@
 #code-respect-header {
   display: block;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 30px;
+  height: 40px;
   background-color: #598ad8;
+  z-index: 2;
 }
 
 button#code-respect-pre-hide {
@@ -31,24 +36,38 @@ button#code-respect-pre-hide {
   font-family: 'source code pro';
   font-size: 13px;
   position: absolute;
-  top: 30px;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
-  right: 0;
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
 }
 
 #code-respect-code {
-  -webkit-box-sizing: border-box; box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding: 10px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: scroll;
 }
 
-body {
-  width: 700px;
-  height: 300px;
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
 }
 
 
