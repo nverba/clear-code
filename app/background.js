@@ -1,5 +1,6 @@
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 
+  // Re-sends messages accross entire tab, reaching in/out of frames
   if (request.tabMessage) {
     chrome.tabs.sendMessage(sender.tab.id, request.tabMessage);
   }
