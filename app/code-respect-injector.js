@@ -2,7 +2,7 @@ var codeRespectInjected;
 
 if (!codeRespectInjected) {
 
-  chrome.runtime.sendMessage({ background: "codeRespectInject" }, function(response) {
+  chrome.runtime.sendMessage({ injectCodeRespect: "true" }, function(response) {
     codeRespectInjected = true;
   });
 }

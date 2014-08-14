@@ -1,8 +1,15 @@
 var elements = document.getElementsByTagName('pre');
+var iframe = document.createElement('iframe');
+    iframe.id  = 'code-respect-frame';
+    iframe.src = chrome.extension.getURL("code-respect-popup.html");
+    iframe.style.display = 'none';
+
+document.body.appendChild(iframe);
 
 function openCode(element) {
   var code = JSON.stringify(element.innerHTML);
   chrome.runtime.sendMessage({ openCode: code });
+  iframe.style.display = 'block';
 }
 
 function injectButton(element) {
@@ -17,11 +24,6 @@ function injectButton(element) {
   element.appendChild(div);
 }
 
-for (var i=0, max=elements.length; i < max - 1; i++) {
+for (var i=0, max=elements.length; i < max; i++) {
   injectButton(elements[i]);
 }
-
-var iframe = document.createElement('iframe');
-iframe.style.display = "none";
-iframe.src = chrome.extension.getURL("code-respect-popup.html");
-document.body.appendChild(iframe);

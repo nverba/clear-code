@@ -7,8 +7,7 @@
       "19": "icons/icon19.png",
       "38": "icons/icon38.png"
     },
-    "default_title": "Code-Respect",
-    "default_popup": "code-respect-popup.html"
+    "default_title": "Code-Respect"
   },
   "permissions": [
     "activeTab",
