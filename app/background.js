@@ -1,28 +1,19 @@
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 
-  if (request.popupMessage == "injectContentScripts") {
-    chrome.tabs.executeScript({
-      file: 'code-respect-inject.js'
-    });
-
-    sendResponse({ response: "success" });
-  }
-
-  if (request.codeRespectRequest == "codeRespectInject") {
-
-    chrome.tabs.executeScript({
-      file: 'highlight/highlight.pack.js'
-    });
+  if (request.background == "codeRespectInject") {
 
     chrome.tabs.insertCSS({
-      file: 'code-respect.css'
+      file: 'code-respect-buttons.css'
     });
     chrome.tabs.executeScript({
       file: 'code-respect.js'
     });
+    sendResponse({ response: "success" });
+  }
 
-    chrome.tabs.insertCSS({
-      file: 'highlight/styles/railscasts.css'
+  if (request.popupMessage == "injectContentScripts") {
+    chrome.tabs.executeScript({
+      file: 'code-respect-injector.js'
     });
 
     sendResponse({ response: "success" });

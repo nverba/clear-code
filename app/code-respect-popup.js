@@ -1,8 +1,12 @@
-var sent;
+chrome.runtime.sendMessage({ popupMessage: "injectContentScripts" });
 
-if (!sent) {
-  chrome.runtime.sendMessage({ popupMessage: "injectContentScripts" });
-  sent = true;
-}
+var code  = document.getElementsByTagName('code');
 
+chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 
+  if (request.openCode) {
+    code.innerHTML = JSON.parse(request.openCode);
+  }
+});
+
+hljs.initHighlightingOnLoad();

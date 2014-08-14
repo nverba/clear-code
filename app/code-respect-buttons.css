@@ -1,0 +1,11 @@
+button.code-respect {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 0;
+  background: #eee;
+  border: 1px solid #333;
+  border-radius: 3px;
+}

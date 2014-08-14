@@ -11,11 +11,12 @@
     "default_popup": "code-respect-popup.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["icons/icon19.png"]
+  "web_accessible_resources": ["icons/icon19.png", "code-respect-popup.html"]
 }
