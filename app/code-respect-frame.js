@@ -2,9 +2,7 @@ var code  = document.getElementById('code-respect-code');
 var hide  = document.getElementById('code-respect-frame-hide');
 
 hide.onclick = function (event) {
-  var frame = document.getElementById('code-respect-frame');
-  frame.style.display = 'none';
-  event.preventDefault();
+  chrome.runtime.sendMessage({ tabMessage: { frame: { display: 'none' }}});
 };
 
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {

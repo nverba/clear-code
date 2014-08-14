@@ -1,17 +1,16 @@
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 
-  if (request.openCode) {
-    console.log("This is forwarding");
-    chrome.tabs.sendMessage(sender.tab.id, request);
+  if (request.tabMessage) {
+    chrome.tabs.sendMessage(sender.tab.id, request.tabMessage);
   }
 
   if (request.injectCodeRespect) {
 
     chrome.tabs.insertCSS({
-      file: 'code-respect-buttons.css'
+      file: 'code-respect-content.css'
     });
     chrome.tabs.executeScript({
-      file: 'code-respect.js'
+      file: 'code-respect-content.js'
     });
 
     sendResponse({ response: "success" });

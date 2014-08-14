@@ -7,7 +7,7 @@
       "19": "icons/icon19.png",
       "38": "icons/icon38.png"
     },
-    "default_title": "Code-Respect"
+    "default_title": "Code Respect"
   },
   "permissions": [
     "activeTab",
@@ -17,5 +17,5 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["icons/icon19.png", "code-respect-popup.html"]
+  "web_accessible_resources": ["icons/icon19.png", "code-respect-frame.html"]
 }
