@@ -8,6 +8,7 @@ hide.onclick = function (event) {
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
   if (request.openCode) {
     code.innerHTML = JSON.parse(request.openCode);
+    code.className = "";
     hljs.highlightBlock(code);
   }
 });
