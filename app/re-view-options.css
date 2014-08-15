@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "source code pro";
+  src: url("fonts/SourceCodePro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-black-italic";
+  src: url("fonts/Roboto-BlackItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#content {
+  font-family: 'roboto-black-italic';
+  color: #B4B698;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#re-view-title {
+  font-size: 60px;
+}
+
+#re-view-sub-title {
+  font-size: 20px;
+  margin-left: 260px;
+}
