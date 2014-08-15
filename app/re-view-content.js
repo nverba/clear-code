@@ -1,6 +1,6 @@
 var elements = document.getElementsByTagName('pre');
 var iframe = document.createElement('iframe');
-    iframe.id  = 're-view-frame';
+    iframe.id = 're-view-frame';
     iframe.src = chrome.extension.getURL("re-view-frame.html");
     iframe.scrolling = "no";
     iframe.draggable = 'true';
