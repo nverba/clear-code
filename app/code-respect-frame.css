@@ -60,27 +60,36 @@ button#code-respect-frame-hide {
   left: 50px;
   right: 0;
   margin: 0 0 0 0;
-  padding: 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 15px inset;
-  box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 15px inset;
+  padding: 0px 20px 10px 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
 }
 
 #code-respect-code {
-  position: absolute;
-  overflow: auto;
-  padding: 10px 10px 10px 0px;
-  top: 10px; bottom: 10px;
-  left: 20px; right: 7px;
+  position: relative;
+  overflow: visible;
+  padding: 0px 0px 0px 0px;
+  top: 0px;
+  left: 0px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: #363633;
+  border-radius: 6px;
+  background-color: #363633;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 12px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 12px inset;
+}
+
+::-webkit-scrollbar-corner {
+
 }
 
 html, body {
