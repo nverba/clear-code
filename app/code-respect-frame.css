@@ -9,7 +9,14 @@
   font-style: normal;
 }
 
-#code-respect-header {
+@font-face {
+  font-family: "roboto-black-italic";
+  src: url("fonts/Roboto-BlackItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header#code-respect-header {
   display: block;
   width: 100%;
   position: fixed;
@@ -20,16 +27,28 @@
   z-index: 2;
 }
 
-button#code-respect-pre-hide {
+#code-respect-title {
+  font-family: 'roboto-black-italic';
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
   position: absolute;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  margin: 5px;
+  left: 10px;
+}
+
+button#code-respect-frame-hide {
+  position: absolute;
+  right: 6px;
+  margin: 0;
   padding: 0;
-  background: #eee;
-  border: 1px solid #333;
+  background: transparent;
+  border: none;
+  height: 40px;
   border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
 }
 
 #code-respect-pre {
@@ -38,18 +57,21 @@ button#code-respect-pre-hide {
   position: absolute;
   top: 40px;
   bottom: 0;
-  left: 0;
+  left: 50px;
   right: 0;
   margin: 0 0 0 0;
   padding: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 15px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 15px inset;
 }
 
 #code-respect-code {
   position: absolute;
   overflow: auto;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
   top: 10px; bottom: 10px;
-  left: 0; right: 7px;
+  left: 20px; right: 7px;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -58,7 +80,7 @@ button#code-respect-pre-hide {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 6px;
-    background-color: #85755A;
+    background-color: #363633;
 }
 
 html, body {
@@ -66,6 +88,7 @@ html, body {
   height: 100%;
   border: 0;
   margin: 0;
+  background-color: #363633;
 }
 
 
