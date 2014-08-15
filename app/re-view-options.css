@@ -49,6 +49,7 @@ select {
   border-radius: 12px;
   border: 1px solid #CACACA;
   background-color: transparent;
+  cursor: pointer;
 }
 
 select-arrow {

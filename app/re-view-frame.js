@@ -14,12 +14,13 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
   }
 });
 
-chrome.storage.local.get({ 'highlight_css_link': 'tomorrow-night' }, function (response) {
+chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
   hlcss.href = 'highlight/styles/' + response.highlight_css_link + '.css';
 });
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   if (!changes.highlight_css_link) { return; }
   hlcss.href = 'highlight/styles/' + changes.highlight_css_link.newValue + '.css';
+  code.className = "";
   hljs.highlightBlock(code);
 });
