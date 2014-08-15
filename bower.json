@@ -1,10 +1,10 @@
 {
-  "name": "Re-View",
+  "name": "Code ReView",
   "version": "0.0.0",
   "authors": [
     "nverba <distantstate@gmail.com>"
   ],
-  "description": "Give embeded code the respect it deserves.",
+  "description": "Make embeded code easier to digest",
   "license": "MIT",
   "private": true,
   "ignore": [
