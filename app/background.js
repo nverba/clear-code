@@ -8,10 +8,10 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
   if (request.injectCodeRespect) {
 
     chrome.tabs.insertCSS({
-      file: 'code-respect-content.css'
+      file: 're-view-content.css'
     });
     chrome.tabs.executeScript({
-      file: 'code-respect-content.js'
+      file: 're-view-content.js'
     });
 
     sendResponse({ response: "success" });
@@ -20,6 +20,6 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 
 chrome.browserAction.onClicked.addListener(function (tab) {
   chrome.tabs.executeScript({
-    file: 'code-respect-injector.js'
+    file: 're-view-injector.js'
   });
 });

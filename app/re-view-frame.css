@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-header#code-respect-header {
+header#re-view-header {
   display: block;
   width: 100%;
   position: fixed;
@@ -27,7 +27,7 @@ header#code-respect-header {
   z-index: 2;
 }
 
-#code-respect-title {
+#re-view-title {
   font-family: 'roboto-black-italic';
   font-size: 20px;
   line-height: 40px;
@@ -36,7 +36,7 @@ header#code-respect-header {
   left: 10px;
 }
 
-button#code-respect-frame-hide {
+button#re-view-frame-hide {
   position: absolute;
   right: 6px;
   margin: 0;
@@ -51,7 +51,7 @@ button#code-respect-frame-hide {
   color: white;
 }
 
-#code-respect-pre {
+#re-view-pre {
   font-family: 'source code pro';
   font-size: 13px;
   position: absolute;
@@ -65,7 +65,7 @@ button#code-respect-frame-hide {
   box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
 }
 
-#code-respect-code {
+#re-view-code {
   position: relative;
   overflow: visible;
   padding: 0px 0px 0px 0px;
@@ -101,6 +101,6 @@ html, body {
 }
 
 
-button.code-respect {
+button.re-view {
   display: none;
 }

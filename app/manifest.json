@@ -1,13 +1,18 @@
 {
-  "name": "Code Respect",
-  "version": "0.1",
+  "name": "Re-View",
+  "version": "0.2",
   "manifest_version": 2,
   "browser_action": {
     "default_icon": {
       "19": "icons/icon19.png",
       "38": "icons/icon38.png"
     },
-    "default_title": "Code Respect"
+    "default_title": "Re-View"
+  },
+  "icons": {
+    "19": "icons/icon19.png",
+    "38": "icons/icon38.png",
+    "128": "icons/icon128.png"
   },
   "permissions": [
     "activeTab",
@@ -17,5 +22,5 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["icons/icon19.png", "code-respect-frame.html"]
+  "web_accessible_resources": ["icons/icon19.png", "re-view-frame.html"]
 }

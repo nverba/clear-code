@@ -1,4 +1,4 @@
-button.code-respect {
+button.re-view {
   display: block;
   float: left;
   width: 20px;
@@ -10,7 +10,7 @@ button.code-respect {
   border-radius: 3px;
 }
 
-#code-respect-frame {
+#re-view-frame {
   position: fixed;
   z-index: 9999;
   top: 5%;

@@ -1,5 +1,5 @@
-var code  = document.getElementById('code-respect-code');
-var hide  = document.getElementById('code-respect-frame-hide');
+var code  = document.getElementById('re-view-code');
+var hide  = document.getElementById('re-view-frame-hide');
 
 hide.onclick = function (event) {
   chrome.runtime.sendMessage({ tabMessage: { frame: { display: 'none' }}});

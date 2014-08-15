@@ -1,7 +1,7 @@
 var elements = document.getElementsByTagName('pre');
 var iframe = document.createElement('iframe');
-    iframe.id  = 'code-respect-frame';
-    iframe.src = chrome.extension.getURL("code-respect-frame.html");
+    iframe.id  = 're-view-frame';
+    iframe.src = chrome.extension.getURL("re-view-frame.html");
     iframe.scrolling = "no";
     iframe.draggable = 'true';
     iframe.style.display = 'none';
@@ -18,7 +18,7 @@ function injectButton(element) {
   var div    = document.createElement('div');
   var button = document.createElement('button');
   button.style.backgroundImage = 'url(' + chrome.extension.getURL("icons/icon19.png") + ')';
-  button.className = 'code-respect';
+  button.className = 're-view';
   button.onclick = function () {
     openCode(element);
   };
