@@ -9,12 +9,21 @@ var reset = document.getElementById('beautify_reset');
 
 var code  = "";
 
+function highlight() {
+  code_block.className = "";
+  hljs.highlightBlock(code_block);
+}
+
+function format(beautifier) {
+  code_block.innerHTML = code;
+  if (beautifier) { code_block.innerText = beautifier(code_block.innerText); }
+  highlight();
+}
+
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
   if (request.openCode) {
     code = JSON.parse(request.openCode);
-    code_block.innerHTML = code;
-    code_block.className = "";
-    hljs.highlightBlock(code_block);
+    format();
   }
 });
 
@@ -25,8 +34,7 @@ chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   if (!changes.highlight_css_link) { return; }
   hlcss.href = 'highlight/styles/' + changes.highlight_css_link.newValue + '.css';
-  code_block.className = "";
-  hljs.highlightBlock(code_block);
+  highlight();
 });
 
 hide.onclick = function (event) {
@@ -34,5 +42,17 @@ hide.onclick = function (event) {
 };
 
 js.onclick = function () {
-  code_block.innerText = js_beautify(code);
+  format(js_beautify);
+};
+
+html.onclick = function () {
+  format(html_beautify);
+};
+
+css.onclick = function () {
+  format(css_beautify);
+};
+
+reset.onclick = function () {
+  format();
 };
