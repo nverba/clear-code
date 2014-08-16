@@ -17,6 +17,11 @@
 }
 
 header#re-view-header {
+  font-family: "roboto-black-italic";
+  font-size: 19px;
+  color: white;
+  text-align: right;
+  padding-right: 50px;
   display: block;
   width: 100%;
   position: fixed;
@@ -38,17 +43,23 @@ header#re-view-header {
 
 button#re-view-frame-hide {
   position: absolute;
+  padding-right: 0px;
   right: 6px;
-  margin: 0;
-  padding: 0;
-  background: transparent;
   border: none;
-  height: 40px;
-  border-radius: 3px;
+}
+
+header button {
+  font-family: "roboto-black-italic";
+  margin: 5px 5px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  height: 30px;
+  border-radius: 15px;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 40px;
-  color: white;
+  font-size: 19px;
+  line-height: 20px;
+  color: #FFF;
 }
 
 #re-view-pre {
