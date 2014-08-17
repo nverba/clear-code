@@ -1,3 +1,5 @@
 
 .icon-close:before { content: '\e800'; } /* '' */
 .icon-ccw:before { content: '\e801'; } /* '' */
+.icon-down-dir:before { content: '\e802'; } /* '' */
+.icon-up-dir:before { content: '\e803'; } /* '' */

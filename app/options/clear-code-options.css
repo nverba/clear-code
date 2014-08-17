@@ -52,7 +52,7 @@ a:active {
   -webkit-margin-start: 23px;
 }
 
-button {
+li button {
   background-color: #FFF;
   border: 0;
   color: #999;
@@ -104,6 +104,12 @@ header {
   z-index: 2;
 }
 
+#main-content button {
+  min-height: 1.7em;
+  color: #444;
+  padding: 0px 6px;
+}
+
 select {
   min-height: 1.7em;
   min-width: 4em;
@@ -122,4 +128,9 @@ section {
 
 .li-active {
   border-left: 7px solid #313131;
+}
+
+pre {
+  max-width: 738px;
+  min-width: 600px;
 }

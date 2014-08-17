@@ -1,12 +1,16 @@
 var Options = angular.module('Options', []);
 
-Options.controller('HeadController', function HeadController($scope) {
+Options.controller('HeadController', function HeadController($scope, $timeout) {
+
+  var code_block = document.getElementById('code');
 
   chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
     $scope.$apply(function () {
       $scope.highlighterStyle = { url: chrome.extension.getURL('highlight/styles/default.css') } ;
     });
   });
+
+  hljs.highlightBlock(code_block);
 
   chrome.storage.onChanged.addListener(function (changes, namespace) {
     if (!changes.highlight_css_link) { return; }
@@ -27,6 +31,14 @@ Options.controller('OptionsController', function OptionsController($scope) {
     $scope.name.active = value;
   };
 
+  $scope.selectUp = function () {
+    $scope.highlighterStyle.active = $scope.options[$scope.options.indexOf( $scope.highlighterStyle.active ) - 1];
+  };
+
+  $scope.selectDown = function () {
+    $scope.highlighterStyle.active = $scope.options[$scope.options.indexOf( $scope.highlighterStyle.active ) + 1];
+  };
+
   chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
     $scope.$apply(function () {
       $scope.highlighterStyle = { active: response.highlight_css_link };
@@ -34,6 +46,7 @@ Options.controller('OptionsController', function OptionsController($scope) {
   });
 
   $scope.$watch('highlighterStyle.active', function (newVal, oldVal) {
+    if (!$scope.highlighterStyle) return;
     chrome.storage.local.set({ 'highlight_css_link': newVal });
   });
 });
