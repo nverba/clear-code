@@ -10,6 +10,7 @@ Options.controller('HeadController', function HeadController($scope, $timeout) {
     });
   });
 
+  code_block.innerText = "//comment...! \n\nvar elements = document.getElementsByTagName('div'); \nvar sample = {}; \n\nfunction SampleFunction() { \n  console.log('hello world'); \n}";
   hljs.highlightBlock(code_block);
 
   chrome.storage.onChanged.addListener(function (changes, namespace) {
