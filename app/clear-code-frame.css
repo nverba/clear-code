@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-header#re-view-header {
+header#clear-code-header {
   font-family: "roboto-black-italic";
   font-size: 19px;
   color: white;
@@ -32,7 +32,7 @@ header#re-view-header {
   z-index: 2;
 }
 
-#re-view-title {
+#clear-code-title {
   font-family: 'roboto-black-italic';
   font-size: 20px;
   line-height: 40px;
@@ -41,7 +41,7 @@ header#re-view-header {
   left: 10px;
 }
 
-button#re-view-frame-hide {
+button#clear-code-frame-hide {
   position: absolute;
   padding-right: 0px;
   right: 6px;
@@ -62,7 +62,7 @@ header button {
   color: #FFF;
 }
 
-#re-view-pre {
+#clear-code-pre {
   font-family: 'source code pro';
   font-size: 13px;
   position: absolute;
@@ -76,7 +76,7 @@ header button {
   box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
 }
 
-#re-view-code {
+#clear-code-code {
   position: relative;
   overflow: visible;
   padding: 0px 0px 0px 0px;
@@ -112,6 +112,6 @@ html, body {
 }
 
 
-button.re-view {
+button.clear-code {
   display: none;
 }

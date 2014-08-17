@@ -1,5 +1,5 @@
-var code_block = document.getElementById('re-view-code');
-var hide  = document.getElementById('re-view-frame-hide');
+var code_block = document.getElementById('clear-code-code');
+var hide  = document.getElementById('clear-code-frame-hide');
 var hlcss = document.getElementById('highlight-css-link');
 
 var js    = document.getElementById('beautify_js');

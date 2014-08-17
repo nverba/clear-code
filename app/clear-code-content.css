@@ -1,4 +1,4 @@
-button.re-view {
+button.clear-code {
   display: block;
   float: left;
   width: 20px;
@@ -10,7 +10,7 @@ button.re-view {
   border-radius: 3px;
 }
 
-#re-view-frame {
+#clear-code-frame {
   position: fixed;
   z-index: 9999;
   top: 0px;

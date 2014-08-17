@@ -22,6 +22,6 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "options_page": "options/re-view-options.html",
-  "web_accessible_resources": ["icons/icon19.png", "re-view-frame.html"]
+  "options_page": "options/clear-code-options.html",
+  "web_accessible_resources": ["icons/icon19.png", "clear-code-frame.html"]
 }
