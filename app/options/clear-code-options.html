@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html html lang="en" ng-app="Options" ng-strict-di="">
-<head ng-controller="OptionsController">
+<html html lang="en" ng-app="Options" ng-strict-di="" ng-csp="">
+<head>
 
   <meta charset="utf-8">
   <title>Code ReView Options</title>
@@ -11,7 +11,7 @@
   <script src="../highlight/highlight.pack.js"></script>
 
 </head>
-<body>
+<body ng-controller="OptionsController">
 
   <h1 id="name">Clear Code</h1>
   <ul>
@@ -34,7 +34,7 @@
     </section>
   </div>
 
-  <script src="../libs/libs.js"></script>
+  <script src="../scripts/libs.js"></script>
   <script src="clear-code-options.js"></script>
 </body>
 </html>

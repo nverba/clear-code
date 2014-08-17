@@ -6,7 +6,7 @@ var karma          = require('karma').server;
 gulp.task('bower', function() {
   return gulp.src(mainBowerFiles(/* options */))
     .pipe(concat('libs.js'))
-    .pipe(gulp.dest('./app/libs'));
+    .pipe(gulp.dest('./app/scripts'));
 });
 
 
