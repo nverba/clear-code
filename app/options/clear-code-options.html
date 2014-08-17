@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html html lang="en" ng-app="Options" ng-strict-di="" ng-csp="">
-<head>
+<head ng-controller="HeadController">
 
   <meta charset="utf-8">
   <title>Code ReView Options</title>
 
   <link rel="stylesheet" href="clear-code-options.css">
-  <link rel="stylesheet" href="../highlight/styles/tomorrow-night.css" id="highlight-css-link">
+  <link rel="stylesheet" ng-href="{{ highlighterStyle.url }}" >
 
   <script src="../highlight/highlight.pack.js"></script>
 
@@ -23,14 +23,7 @@
   <div id="main-content">
     <section>
       <h3>Style</h3>
-      <select-arrow></select-arrow>
-      <select name="hljs-style" id="hljs-style">
-        <option value="default">Default</option>
-        <option value="arta">Arta</option>
-        <option value="ascetic">Ascetic</option>
-        <option value="atelier-dune.dark">Atelier-dune Dark</option>
-        <option value="atelier-dune.light">Atelier-dune Light</option>
-      </select>
+      <select ng-model="highlighterStyle.active" ng-options="option as option for option in options"></select>
     </section>
   </div>
 
