@@ -1,7 +1,8 @@
 var Options = angular.module('Options', []);
 
 
-Options.controller('OptionsController', function MoCaCtrl($scope) {
+Options.controller('OptionsController', function OptionsController($scope) {
+
   $scope.menu = ['Highlighter', 'Beautifier'];
   $scope.name = { active: $scope.menu[0] };
 

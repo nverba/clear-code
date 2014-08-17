@@ -1,5 +1,5 @@
 {
-  "name": "Code ReView",
+  "name": "Clear Code",
   "version": "0.2",
   "manifest_version": 2,
   "browser_action": {
@@ -7,7 +7,7 @@
       "19": "icons/icon19.png",
       "38": "icons/icon38.png"
     },
-    "default_title": "Code ReView"
+    "default_title": "Clear Code"
   },
   "icons": {
     "19": "icons/icon19.png",
