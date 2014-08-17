@@ -1,5 +1,7 @@
 var Options = angular.module('Options', []);
-
+var css     = document.getElementById('highlight-css-link');
+var code    = document.getElementById('code');
+var style   = document.getElementById('hljs-style');
 
 Options.controller('OptionsController', function OptionsController($scope) {
 
@@ -10,10 +12,5 @@ Options.controller('OptionsController', function OptionsController($scope) {
     $scope.name.active = item;
   };
 });
-
-
-var css   = document.getElementById('highlight-css-link');
-var code  = document.getElementById('code');
-var style = document.getElementById('hljs-style');
 
 
