@@ -13,6 +13,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "js-beautify": "~1.5.1"
+    "js-beautify": "~1.5.1",
+    "angular": "~1.2.22"
   }
 }

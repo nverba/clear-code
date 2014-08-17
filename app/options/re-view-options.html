@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html html lang="en" ng-app="Options" ng-strict-di="">
+<head>
+
+  <meta charset="utf-8">
+  <title>Code ReView Options</title>
+
+  <link rel="stylesheet" href="re-view-options.css">
+  <link rel="stylesheet" href="../highlight/styles/tomorrow-night.css" id="highlight-css-link">
+
+  <script src="../highlight/highlight.pack.js"></script>
+
+</head>
+<body ng-controller="OptionsController">
+
+  <h1 id="name">Clear Code</h1>
+  <ul>
+    <li ng-repeat="item in menu" ng-class="{ 'li-active': item == name.active }"><button ng-bind="item" ng-click="makeActive(item)"></button></li>
+  </ul>
+
+  <header><h1 ng-bind="name.active"></h1></header>
+
+  <div id="main-content">
+    <section>
+      <h3>Style</h3>
+      <select-arrow></select-arrow>
+      <select name="hljs-style" id="hljs-style">
+        <option value="default">Default</option>
+        <option value="arta">Arta</option>
+        <option value="ascetic">Ascetic</option>
+        <option value="atelier-dune.dark">Atelier-dune Dark</option>
+        <option value="atelier-dune.light">Atelier-dune Light</option>
+      </select>
+    </section>
+  </div>
+
+  <script src="../libs/libs.js"></script>
+  <script src="re-view-options.js"></script>
+</body>
+</html>
