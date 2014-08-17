@@ -2,16 +2,11 @@ var Options = angular.module('Options', []);
 
 Options.controller('HeadController', function HeadController($scope, $timeout) {
 
-  var code_block = document.getElementById('code');
-
   chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
     $scope.$apply(function () {
       $scope.highlighterStyle = { url: chrome.extension.getURL('highlight/styles/default.css') } ;
     });
   });
-
-  code_block.innerText = "//comment...! \n\nvar elements = document.getElementsByTagName('div'); \nvar sample = {}; \n\nfunction SampleFunction() { \n  console.log('hello world'); \n}";
-  hljs.highlightBlock(code_block);
 
   chrome.storage.onChanged.addListener(function (changes, namespace) {
     if (!changes.highlight_css_link) { return; }
@@ -31,6 +26,8 @@ Options.controller('OptionsController', function OptionsController($scope) {
   $scope.makeActive = function (value) {
     $scope.name.active = value;
   };
+
+  console.log($scope.name.active);
 
   $scope.selectUp = function () {
     $scope.highlighterStyle.active = $scope.options[$scope.options.indexOf( $scope.highlighterStyle.active ) - 1];
@@ -52,3 +49,17 @@ Options.controller('OptionsController', function OptionsController($scope) {
   });
 });
 
+Options.directive('sampleCode', function () {
+  'use strict';
+
+  return {
+
+    restrict: 'A',
+    scope: {},
+    link: function (scope, elem, attrs) {
+
+      elem[0].innerHTML = "//comment...! \n\nvar elements = document.getElementsByTagName('div'); \nvar sample = {}; \n\nfunction SampleFunction() { \n  console.log('hello world'); \n}";
+      hljs.highlightBlock(elem[0]);
+    }
+  };
+});
