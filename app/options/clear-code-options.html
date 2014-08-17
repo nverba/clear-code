@@ -17,13 +17,20 @@
   <nav>
     <h1 id="name">Clear Code</h1>
     <ul>
-      <li ng-repeat="item in menu" ng-class="{ 'li-active': item == name.active }"><button ng-bind="item" ng-click="makeActive(item)"></button></li>
+      <li ng-repeat="item in menu" ng-class="{ 'li-active': item == active.name }"><button ng-bind="item" ng-click="makeActive(item)"></button></li>
     </ul>
   </nav>
 
-  <header><h1 ng-bind="name.active"></h1></header>
+  <header><h1 ng-bind="active.name"></h1></header>
 
-  <div id="main-content" ng-switch="name.active">
+  <div id="main-content" ng-switch="active.name">
+
+    <section ng-switch-when="Beautifier">
+      <h3>Options</h3>
+
+
+    </section>
+
     <section ng-switch-default>
       <h3>Style</h3>
       <select ng-model="highlighterStyle.active" ng-options="option as option for option in options"></select>
@@ -35,6 +42,7 @@
       </pre>
 
     </section>
+
   </div>
 
   <script src="../scripts/libs.js"></script>
