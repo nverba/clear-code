@@ -37,6 +37,30 @@
 
     </section>
 
+    <section ng-switch-when="HTML Beautifier">
+      <h3>Options</h3>
+
+        <span class="option-input" ng-repeat="(key, value) in html_beautifier_defaults">
+          <input ng-model="html_beautifier[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}">
+          <label ng-bind="key | titelize"></label>
+        </span>
+
+        <button class="reset" ng-click="resetHTML()">Reset</button>
+
+    </section>
+
+    <section ng-switch-when="CSS Beautifier">
+      <h3>Options</h3>
+
+        <span class="option-input" ng-repeat="(key, value) in css_beautifier_defaults">
+          <input ng-model="css_beautifier[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}">
+          <label ng-bind="key | titelize"></label>
+        </span>
+
+        <button class="reset" ng-click="resetCSS()">Reset</button>
+
+    </section>
+
     <section ng-switch-default>
       <h3>Style</h3>
       <select ng-model="highlighterStyle.active" ng-options="option as option for option in options"></select>
@@ -54,6 +78,11 @@
   </div>
 
   <script src="../scripts/libs.js"></script>
-  <script src="clear-code-options.js"></script>
+  <script src="options-app.js"></script>
+  <script src="head-controller.js"></script>
+  <script src="options-controller.js"></script>
+  <script src="titelize-filter.js"></script>
+  <script src="sample-code-directive.js"></script>
+
 </body>
 </html>

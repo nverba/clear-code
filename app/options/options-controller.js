@@ -1,32 +1,3 @@
-var Options = angular.module('Options', []);
-
-Options.controller('HeadController', function HeadController($scope, $timeout) {
-
-  function refresh() {
-    // refresh each pre block to force css re-paint on mouse-up;
-    angular.forEach(document.getElementsByTagName('pre'), function (tag) {
-      $timeout(function function_name () {
-        tag.style.display = 'block';
-      }, 10);
-    });
-  }
-
-  chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
-    $scope.$apply(function () {
-      $scope.highlighterStyle = { url: chrome.extension.getURL('highlight/styles/' + response.highlight_css_link)};
-    });
-  });
-
-  chrome.storage.onChanged.addListener(function (changes, namespace) {
-    if (!changes.highlight_css_link) { return; }
-
-    $scope.$apply(function () {
-      $scope.highlighterStyle.url = chrome.extension.getURL('highlight/styles/' + changes.highlight_css_link.newValue);
-      refresh();
-    });
-  });
-});
-
 Options.controller('OptionsController', function OptionsController($scope) {
 
   $scope.js_beautifier_defaults = {
@@ -46,6 +17,27 @@ Options.controller('OptionsController', function OptionsController($scope) {
     "eval_code": { default: false, type: 'checkbox' },
     "unescape_strings": { default: false, type: 'checkbox' },
     "wrap_line_length": { default: 0, type: 'number' }
+
+  };
+
+  $scope.css_beautifier_defaults = {
+
+    "indent-size": { default: 4, type: 'number' },
+    "indent-char": { default: " ", type: 'text' }
+
+  };
+
+  $scope.html_beautifier_defaults = {
+
+    "indent-inner-html": { default: false, type: 'checkbox' },
+    "indent-size": { default: 4, type: 'number' },
+    "indent-char": { default: " ", type: 'text' },
+    "brace-style": { default: "collapse", type: 'text' },
+    "indent-scripts": { default: "normal", type: 'text' },
+    "wrap-line-length": { default: 250, type: 'number' },
+    "preserve-newlines": { default: false, type: 'checkbox' },
+    "max-preserve-newlines": { default: 10, type: 'number' },
+    "unformatted": { default: [] }
 
   };
 
@@ -91,35 +83,8 @@ Options.controller('OptionsController', function OptionsController($scope) {
   $scope.$watchCollection('js_beautifier', function (newVals, oldVals) {
     chrome.storage.local.set({ 'js_beautifier': newVals });
   });
-});
 
-Options.directive('sampleCode', function () {
-  'use strict';
-
-  return {
-
-    restrict: 'A',
-    scope: {},
-    link: function (scope, elem, attrs) {
-
-      elem[0].innerHTML = "//comment...! \n\nvar elements = document.getElementsByTagName('div'); \nvar sample = {}; \n\nfunction SampleFunction() { \n  console.log('hello world'); \n}";
-      hljs.highlightBlock(elem[0]);
-    }
-  };
-});
-
-Options.filter('titelize', function () {
-
-  return function (input, arg) {
-
-    var words = input.split('_');
-    var array = [];
-
-    for (var i=0; i<words.length; ++i) {
-      array.push(words[i].charAt(0).toUpperCase() + words[i].toLowerCase().slice(1));
-    }
-
-    return array.join(' ');
-
-  };
+  $scope.$watchCollection('html_beautifier', function (newVals, oldVals) {
+    chrome.storage.local.set({ 'html_beautifier': newVals });
+  });
 });
