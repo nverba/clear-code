@@ -139,8 +139,9 @@ section {
 }
 
 pre {
-  max-width: 738px;
+  max-width: 712px;
   min-width: 600px;
+  margin-left: 26px;
 }
 
 .option-input, .reset {
