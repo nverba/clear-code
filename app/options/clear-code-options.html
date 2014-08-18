@@ -13,7 +13,6 @@
 
 </head>
 <body ng-controller="OptionsController">
-
   <nav>
     <h1 id="name">Clear Code</h1>
     <ul>
@@ -25,12 +24,72 @@
 
   <div id="main-content" ng-switch="active.name">
 
-    <section ng-switch-when="Beautifier">
-      <h3>JS</h3>
+    <section ng-switch-when="JS Beautifier">
+      <h3>Options</h3>
 
-      <h3>HTML</h3>
+        <span class="option-input">
+          <input ng-model="js_beautifier.indent_size" min="0" max="8" ng-required="true" type="number">
+          <label> Indent Size</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.indent_char" ng-maxlength="1">
+          <label> Indent Char</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.indent_level" type="number">
+          <label> Indent Level</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.wrap_line_length" type="number">
+          <label> Wrap Line Length</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.brace_style">
+          <label> Brace Style</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.max_preserve_newlines" type="number">
+          <label> Max Preserve Newlines</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.preserve_newlines" type="checkbox">
+          <label> Preserve Newlines</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.indent_with_tabs" type="checkbox">
+          <label> Indent with Tabs</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.jslint_happy" type="checkbox">
+          <label> JSLint Happy</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.keep_array_indentation" type="checkbox">
+          <label> Keep Array Indentation</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.keep_function_indentation" type="checkbox">
+          <label> Keep Function Indentation</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.space_before_conditional" type="checkbox">
+          <label> Space Before Conditional</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.break_chained_methods" type="checkbox">
+          <label> Break Chained Methods</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.eval_code" type="checkbox">
+          <label> Eval Code</label>
+        </span>
+        <span class="option-input">
+          <input ng-model="js_beautifier.unescape_strings" type="checkbox">
+          <label> Unescape Strings</label>
+        </span>
 
-      <h3>CSS</h3>
+
+        <button class="reset" ng-click="resetJS()">Reset</button>
 
     </section>
 
@@ -43,6 +102,8 @@
       <pre>
         <code sample-code></code>
       </pre>
+
+
 
     </section>
 

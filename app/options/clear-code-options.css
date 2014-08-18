@@ -3,6 +3,7 @@ body {
   font-size: 12px;
   cursor: default;
   margin: 0;
+  color: #303942;
 }
 
 :focus {outline:none;}
@@ -140,4 +141,22 @@ section {
 pre {
   max-width: 738px;
   min-width: 600px;
+}
+
+.option-input, .reset {
+  display: block;
+  margin-left: 26px;
+  padding: 1px 0;
+}
+
+.reset {
+  margin-top: 14px;
+}
+
+input[type="number"] {
+  padding: 0 0 0 5px;
+}
+
+code {
+  padding: 25px !important;
 }
