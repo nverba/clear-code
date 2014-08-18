@@ -51,15 +51,50 @@ Options.controller('OptionsController', function OptionsController($scope) {
     });
   };
 
+  $scope.resetHTML = function (argument) {
+    angular.forEach($scope.html_beautifier_defaults, function (value, key) {
+      $scope.html_beautifier[key] = value.default;
+    });
+  };
+
+  $scope.resetCSS = function (argument) {
+    angular.forEach($scope.css_beautifier_defaults, function (value, key) {
+      $scope.css_beautifier[key] = value.default;
+    });
+  };
+
+
+  function getDefaults(source) {
+    var result = {};
+    Object.keys(source).map(function(value, index) {
+       result[value] = source[value].default;
+    });
+    return result;
+  }
+
+  getDefaults($scope.js_beautifier_defaults);
+
   chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
     $scope.$apply(function () {
       $scope.highlighterStyle = { active: response.highlight_css_link };
     });
   });
 
-  chrome.storage.local.get({ 'js_beautifier': $scope.js_beautifier_defaults }, function (response) {
+  chrome.storage.local.get({ 'js_beautifier': getDefaults($scope.js_beautifier_defaults) }, function (response) {
     $scope.$apply(function () {
       $scope.js_beautifier = response.js_beautifier;
+    });
+  });
+
+  chrome.storage.local.get({ 'html_beautifier': getDefaults($scope.html_beautifier_defaults) }, function (response) {
+    $scope.$apply(function () {
+      $scope.html_beautifier = response.html_beautifier;
+    });
+  });
+
+  chrome.storage.local.get({ 'css_beautifier': getDefaults($scope.css_beautifier_defaults) }, function (response) {
+    $scope.$apply(function () {
+      $scope.css_beautifier = response.css_beautifier;
     });
   });
 
@@ -86,5 +121,9 @@ Options.controller('OptionsController', function OptionsController($scope) {
 
   $scope.$watchCollection('html_beautifier', function (newVals, oldVals) {
     chrome.storage.local.set({ 'html_beautifier': newVals });
+  });
+
+  $scope.$watchCollection('css_beautifier', function (newVals, oldVals) {
+    chrome.storage.local.set({ 'css_beautifier': newVals });
   });
 });
