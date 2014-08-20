@@ -7,31 +7,7 @@ var html  = document.getElementById('beautify_html');
 var css   = document.getElementById('beautify_css');
 var reset = document.getElementById('beautify_reset');
 
-var js_beautifier;
-
-var js_beautifier_defaults = {
-
-  "indent_size": 4,
-  "indent_char": " ",
-  "indent_level": 0,
-  "indent_with_tabs": false,
-  "preserve_newlines": true,
-  "max_preserve_newlines": 10,
-  "jslint_happy": false,
-  "brace_style": "collapse",
-  "keep_array_indentation": false,
-  "keep_function_indentation": false,
-  "space_before_conditional": true,
-  "break_chained_methods": false,
-  "eval_code": false,
-  "unescape_strings": false,
-  "wrap_line_length": 0
-
-};
-
-chrome.storage.local.get({ 'js_beautifier': js_beautifier_defaults }, function (response) {
-  js_beautifier = response.js_beautifier;
-});
+var options = {};
 
 var code  = "";
 
@@ -40,10 +16,10 @@ function highlight() {
   hljs.highlightBlock(code_block);
 }
 
-function format(beautifier) {
+function format(beautifier, name) {
   code_block.innerHTML = code;
   if (beautifier) {
-    code_block.innerText = beautifier(code_block.innerText, js_beautifier);
+    code_block.innerText = beautifier(code_block.innerText, options[name]);
   }
   highlight();
 }
@@ -60,12 +36,19 @@ chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response
 });
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
+
   if (changes.highlight_css_link) {
     hlcss.href = 'highlight/styles/' + changes.highlight_css_link.newValue;
     highlight();
   }
   if (changes.js_beautifier) {
-    js_beautifier = changes.js_beautifier.newValue;
+    options.js = changes.js_beautifier.newValue;
+  }
+  if (changes.html_beautifier) {
+    options.html = changes.html_beautifier.newValue;
+  }
+  if (changes.css_beautifier) {
+    options.css = changes.css_beautifier.newValue;
   }
 });
 
@@ -74,15 +57,15 @@ hide.onclick = function (event) {
 };
 
 js.onclick = function () {
-  format(js_beautify);
+  format(js_beautify, "js");
 };
 
 html.onclick = function () {
-  format(html_beautify);
+  format(html_beautify, "html");
 };
 
 css.onclick = function () {
-  format(css_beautify);
+  format(css_beautify, "css");
 };
 
 reset.onclick = function () {

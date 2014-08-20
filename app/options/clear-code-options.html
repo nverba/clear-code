@@ -27,51 +27,36 @@
     <section ng-switch-when="JS Beautifier">
       <h3>Options</h3>
 
-        <span class="option-input" ng-repeat="(key, value) in js_beautifier_defaults">
-          <input ng-model="js_beautifier[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}">
-          <label ng-bind="key | titelize"></label>
-        </span>
-
-
-        <button class="reset" ng-click="resetJS()">Reset</button>
+      <options-section options="js_beautifier_defaults" model="js_beautifier"></options-section>
 
     </section>
 
     <section ng-switch-when="HTML Beautifier">
       <h3>Options</h3>
 
-        <span class="option-input" ng-repeat="(key, value) in html_beautifier_defaults">
-          <input ng-model="html_beautifier[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}">
-          <label ng-bind="key | titelize"></label>
-        </span>
-
-        <button class="reset" ng-click="resetHTML()">Reset</button>
+      <options-section options="html_beautifier_defaults" model="html_beautifier"></options-section>
 
     </section>
 
     <section ng-switch-when="CSS Beautifier">
       <h3>Options</h3>
 
-        <span class="option-input" ng-repeat="(key, value) in css_beautifier_defaults">
-          <input ng-model="css_beautifier[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}">
-          <label ng-bind="key | titelize"></label>
-        </span>
-
-        <button class="reset" ng-click="resetCSS()">Reset</button>
+      <options-section options="css_beautifier_defaults" model="css_beautifier"></options-section>
 
     </section>
 
     <section ng-switch-default>
       <h3>Style</h3>
-      <select ng-model="highlighterStyle.active" ng-options="option as option for option in options"></select>
-      <button ng-mouseup="selectUp()" ng-disabled="highlighterStyle.active == options[0]"><i class="icon-up-dir"></i></button>
-      <button ng-click="selectDown()" ng-disabled="highlighterStyle.active == options[options.length - 1]"><i class="icon-down-dir"></i></button>
+
+      <span class="option-input">
+        <select ng-model="highlighterStyle.active" ng-options="option as option for option in style_options"></select>
+        <button ng-mouseup="selectUp()" ng-disabled="highlighterStyle.active == options[0]"><i class="icon-up-dir"></i></button>
+        <button ng-click="selectDown()" ng-disabled="highlighterStyle.active == options[options.length - 1]"><i class="icon-down-dir"></i></button>
+      </span>
 
       <pre>
         <code sample-code></code>
       </pre>
-
-
 
     </section>
 
@@ -82,6 +67,7 @@
   <script src="head-controller.js"></script>
   <script src="options-controller.js"></script>
   <script src="titelize-filter.js"></script>
+  <script src="options-section-directive.js"></script>
   <script src="sample-code-directive.js"></script>
 
 </body>

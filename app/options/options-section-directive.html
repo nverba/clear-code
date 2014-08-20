@@ -1,0 +1,9 @@
+<span class="option-input" ng-repeat="(key, value) in options">
+
+  <input ng-if="!value.options" ng-model="model[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}" ngPattern="{{ value.options }}">
+  <select ng-if="value.options" ng-model="model[ key ]" ng-options="option as option for option in value.options"></select>
+  <label ng-bind="key | titelize"></label>
+
+</span>
+
+<button class="reset" ng-click="reset()">Reset</button>

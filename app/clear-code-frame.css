@@ -115,3 +115,7 @@ html, body {
 button.clear-code {
   display: none;
 }
+
+.large {
+  font-size: 20px;
+}
