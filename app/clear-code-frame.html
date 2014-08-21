@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html ng-csp="">
-  <head>
+<html  ng-app="ClearCodeApp" ng-strict-di="" ng-csp="">
+
+  <head ng-controller="ClearCodeHeadController">
 
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="clear-code-frame.css">
-    <link rel="stylesheet" href="highlight/styles/tomorrow-night.css" id="highlight-css-link">
+    <link rel="stylesheet" ng-href="{{ css_href }}" >
     <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
 
     <script src="highlight/highlight.pack.js"></script>
 
   </head>
-  <body>
+  <body ng-controller="ClearCodeFrameController">
 
     <header id='clear-code-header'>
       <span id="clear-code-title"><span class="large">&lt;</span>CLEAR-CODE<span class="large">&gt;</span></span>
@@ -32,6 +33,12 @@
 
     <script src="clear-code-frame.js"></script>
     <script src="scripts/libs.js"></script>
+    <script src="clear-code-app.js"></script>
+    <script src="clear-code-frame-controller.js"></script>
+    <script src="clear-code-head-controller.js"></script>
+    <script src="options/options-service.js"></script>
+    <script src="options/options-default-values.js"></script>
+    <script src="options/angular-resolver.js"></script>
 
   </body>
 </html>
