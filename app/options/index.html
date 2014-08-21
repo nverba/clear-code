@@ -27,11 +27,7 @@
     <section ng-switch-default>
       <h3>Style</h3>
 
-      <span class="option-input">
-        <select ng-model="highlighterStyle.active" ng-options="option as option for option in style_options"></select>
-        <button ng-mouseup="selectUp()" ng-disabled="highlighterStyle.active == options[0]"><i class="icon-up-dir"></i></button>
-        <button ng-click="selectDown()" ng-disabled="highlighterStyle.active == options[options.length - 1]"><i class="icon-down-dir"></i></button>
-      </span>
+      <options-section options="default_options.css_href" model="options.css_href"></options-section>
 
       <pre>
         <code sample-code></code>
