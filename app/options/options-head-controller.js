@@ -10,8 +10,8 @@ OptionsApp.controller('HeadController', function HeadController($scope, $timeout
   }
 
   Options.then(function (options) {
-    $scope.$watch( function (){ return options.css_href.style; }, function (newValue, oldValue) {
-      $scope.css_href = chrome.extension.getURL( 'highlight/styles/' + options.css_href.style );
+    $scope.$watch( function (){ return options.section.css_href.style; }, function (newValue, oldValue) {
+      $scope.css_href = chrome.extension.getURL( 'highlight/styles/' + options.section.css_href.style );
       cssForcePaint();
     });
   });

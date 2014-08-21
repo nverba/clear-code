@@ -5,6 +5,7 @@ angular.module('optionsService', ['defaultOptions'])
       var OptionsService  = {};
       var promisedOptions = [];
 
+      OptionsService.section = {};
       OptionsService.updateOptions = {};
       OptionsService.resetOptions  = {};
 
@@ -25,17 +26,17 @@ angular.module('optionsService', ['defaultOptions'])
       function configOptions(deferred, key) {
 
         OptionsService.updateOptions[key] = function (option, value) {
-          OptionsService[key][option] = value;
-          chrome.storage.local.set(objectify(key, OptionsService[key]));
+          OptionsService.section[key][option] = value;
+          chrome.storage.local.set(objectify(key, OptionsService.section[key]));
         };
 
         OptionsService.resetOptions[key] = function () {
-          OptionsService[key] = default_options[key];
-          chrome.storage.local.set(objectify(key, OptionsService[key]));
+          OptionsService.section[key] = default_options[key];
+          chrome.storage.local.set(objectify(key, OptionsService.section[key]));
         };
 
         chrome.storage.local.get(objectify(key, mapDefaults(default_options[key])), function (response) {
-          OptionsService[key] = response[key];
+          OptionsService.section[key] = response[key];
           deferred.resolve();
         });
       }
