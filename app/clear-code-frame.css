@@ -16,6 +16,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 header#clear-code-header {
   font-family: "roboto-black-italic";
   font-size: 19px;
@@ -34,11 +41,11 @@ header#clear-code-header {
 
 #clear-code-title {
   font-family: 'roboto-black-italic';
-  font-size: 20px;
   line-height: 40px;
   color: white;
   position: absolute;
-  left: 10px;
+  left: 12px;
+
 }
 
 button#clear-code-frame-hide {
@@ -63,7 +70,7 @@ header button {
 }
 
 #clear-code-pre {
-  font-family: 'source code pro';
+  font-family: 'Roboto';
   font-size: 13px;
   position: absolute;
   top: 40px;

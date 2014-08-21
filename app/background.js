@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
     chrome.tabs.sendMessage(sender.tab.id, request.tabMessage);
   }
 
-  if (request.injectCodeRespect) {
+  if (request.injectClearCode) {
 
     chrome.tabs.insertCSS({
       file: 'clear-code-content.css'

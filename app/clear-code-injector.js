@@ -1,8 +1,8 @@
-var codeRespectInjected;
+var clear_code_injected;
 
-if (!codeRespectInjected) {
+if (!clear_code_injected) {
 
-  chrome.runtime.sendMessage({ injectCodeRespect: "true" }, function(response) {
-    codeRespectInjected = true;
+  chrome.runtime.sendMessage({ injectClearCode: "true" }, function(response) {
+    clear_code_injected = true;
   });
 }
