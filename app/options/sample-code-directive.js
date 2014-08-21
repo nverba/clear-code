@@ -1,4 +1,4 @@
-Options.directive('sampleCode', function () {
+OptionsApp.directive('sampleCode', function () {
   'use strict';
 
   return {

@@ -1,1 +1,1 @@
-var Options = angular.module('Options', []);
+var OptionsApp = angular.module('OptionsApp', ['defaultOptions', 'optionsService', 'ResolverPromiseHelper']);

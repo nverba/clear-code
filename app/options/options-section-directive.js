@@ -1,4 +1,4 @@
-Options.directive('optionsSection', function () {
+OptionsApp.directive('optionsSection', function () {
   'use strict';
 
   return {

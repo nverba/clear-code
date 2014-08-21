@@ -19,6 +19,7 @@ function highlight() {
 function format(beautifier, name) {
   code_block.innerHTML = code;
   if (beautifier) {
+    console.log(options[name]);
     code_block.innerText = beautifier(code_block.innerText, options[name]);
   }
   highlight();

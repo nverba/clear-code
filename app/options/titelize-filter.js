@@ -1,4 +1,4 @@
-Options.filter('titelize', function () {
+OptionsApp.filter('titelize', function () {
 
   return function (input, arg) {
 
