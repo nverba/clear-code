@@ -32,8 +32,8 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
   }
 });
 
-chrome.storage.local.get({ 'highlight_css_link': 'default' }, function (response) {
-  hlcss.href = 'highlight/styles/' + response.highlight_css_link;
+chrome.storage.local.get({ 'css_href': 'default.css' }, function (response) {
+  hlcss.href = 'highlight/styles/' + response.css_href.style;
 });
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
