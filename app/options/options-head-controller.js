@@ -5,7 +5,7 @@ OptionsApp.controller('HeadController', function HeadController($scope, $timeout
     angular.forEach(document.getElementsByTagName('pre'), function (tag) {
       $timeout(function function_name () {
         tag.style.display = 'block';
-      }, 10);
+      }, 50);
     });
   }
 

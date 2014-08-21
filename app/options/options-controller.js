@@ -9,6 +9,16 @@ OptionsApp.controller('OptionsController', function OptionsController($scope, de
 
   $scope.default_options = default_options;
   Options.then(function (options) {
-    $scope.options = options;
+
+    $scope.options = options.section;
+
+    angular.forEach(options.section, function (value, key) {
+      $scope.$watchCollection( function (){ return options.section[key]; }, function (newValue, oldValue) {
+        if (newValue === oldValue) { return; }
+        options.updateOptions[key]();
+      });
+    });
   });
+
+
 });
