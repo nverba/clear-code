@@ -23,15 +23,14 @@
       <button ng-click="formatCode('css')">CSS</button>
       <button ng-click="formatCode()"><i class="icon-ccw"></i></button>
 
-      <button id='clear-code-frame-hide'>
+      <button ng-click="closeFrame()" id='close'>
         <i class="icon-close"></i>
       </button>
     </header>
     <pre id='clear-code-pre' class="hljs">
-      <code id='clear-code-code' clear-code></code>
+      <code id='clear-code-code' format-code></code>
     </pre>
 
-    <script src="clear-code-frame.js"></script>
     <script src="scripts/libs.js"></script>
     <script src="clear-code-app.js"></script>
     <script src="clear-code-frame-controller.js"></script>
@@ -39,7 +38,7 @@
     <script src="options/options-service.js"></script>
     <script src="options/options-default-values.js"></script>
     <script src="options/angular-resolver.js"></script>
-    <script src="clear-code-directive.js"></script>
+    <script src="clear-code-format-code-directive.js"></script>
 
   </body>
 </html>

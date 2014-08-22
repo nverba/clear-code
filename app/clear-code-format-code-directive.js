@@ -1,4 +1,4 @@
-ClearCodeApp.directive('clearCode', function (Options) {
+ClearCodeApp.directive('formatCode', function (Options) {
   'use strict';
 
   return {
