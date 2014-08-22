@@ -18,17 +18,17 @@
       <span id="clear-code-title">&lt;clear-code&gt;</span>
 
       Beautifiers:
-      <button id="beautify_js">JS</button>
-      <button id="beautify_html">HTML</button>
-      <button id="beautify_css">CSS</button>
-      <button id="beautify_reset"><i class="icon-ccw"></i></button>
+      <button ng-click="formatCode('js')">JS</button>
+      <button ng-click="formatCode('html')">HTML</button>
+      <button ng-click="formatCode('css')">CSS</button>
+      <button ng-click="formatCode()"><i class="icon-ccw"></i></button>
 
       <button id='clear-code-frame-hide'>
         <i class="icon-close"></i>
       </button>
     </header>
     <pre id='clear-code-pre' class="hljs">
-      <code id='clear-code-code'></code>
+      <code id='clear-code-code' clear-code></code>
     </pre>
 
     <script src="clear-code-frame.js"></script>
@@ -39,6 +39,7 @@
     <script src="options/options-service.js"></script>
     <script src="options/options-default-values.js"></script>
     <script src="options/angular-resolver.js"></script>
+    <script src="clear-code-directive.js"></script>
 
   </body>
 </html>
