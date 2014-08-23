@@ -41,5 +41,10 @@ angular.module('optionsService', ['defaultOptions'])
         chrome.storage.local.set(objectify('ClearCodeOptions', OptionsService.categories));
       }, true);
 
+      chrome.storage.onChanged.addListener(function(changes, namespace) {
+        if (namespace !== 'local' || !changes.ClearCodeOptions || angular.equals(OptionsService.categories, changes.ClearCodeOptions.newValue)) { return; }
+        OptionsService.categories = changes.ClearCodeOptions.newValue;
+      });
+
       return OptionsService;
     });
