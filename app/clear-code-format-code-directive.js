@@ -17,8 +17,8 @@ ClearCodeApp.directive('formatCode', function (Options) {
       scope.formatCode = function format_code(name) {
         element.innerHTML = code;
         if (name) {
-          Options.then(function (options) {
-            element.innerText = window[name + '_beautify'](element.innerText, options[name]);
+          Options.ready.then(function () {
+            element.innerText = window[name + '_beautify'](element.innerText, Options.categories[name]);
             scope.highlightCode();
           });
         } else {

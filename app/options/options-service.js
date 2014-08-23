@@ -1,15 +1,25 @@
 angular.module('optionsService', ['defaultOptions'])
   .factory('Options',
-    function (default_options, Resolver, $q) {
+    function (default_options, Resolver, $q, $rootScope) {
 
       var OptionsService  = {};
-      var promisedOptions = [];
 
-      OptionsService.section = {};
-      OptionsService.updateOptions = {};
-      OptionsService.resetOptions  = {};
+      OptionsService.ready = Resolver.deferr(loadOptions);
+
+      OptionsService.resetOptions = function () {
+        chrome.storage.local.clear();
+      };
+
+      function loadOptions(deferred) {
+
+        chrome.storage.local.get(objectify('ClearCodeOptions', mapDefaults(default_options)), function (response) {
+          OptionsService.categories = response.ClearCodeOptions;
+          deferred.resolve();
+        });
+      }
 
       function objectify(key, value) {
+
         var obj = {};
         obj[key] = value;
         return obj;
@@ -17,36 +27,19 @@ angular.module('optionsService', ['defaultOptions'])
 
       function mapDefaults(defaults) {
         var response = {};
-        Object.keys(defaults).map(function(key) {
-          response[key] = defaults[key].default;
+        angular.forEach(defaults, function (options, category) {
+          response[category] = {};
+          angular.forEach(options, function (value, option) {
+            response[category][option] = value.default;
+          });
         });
         return response;
       }
 
-      function configOptions(deferred, key) {
+      $rootScope.$watch( function (){ return OptionsService.categories; }, function (newValue, oldValue) {
+        if (angular.equals(newValue, oldValue)) { return; }
+        chrome.storage.local.set(objectify('ClearCodeOptions', OptionsService.categories));
+      }, true);
 
-        OptionsService.updateOptions[key] = function () {
-          chrome.storage.local.set(objectify(key, OptionsService.section[key]));
-        };
-
-        OptionsService.resetOptions[key] = function () {
-          chrome.storage.local.set(objectify(key, false));
-        };
-
-        chrome.storage.local.get(objectify(key, mapDefaults(default_options[key])), function (response) {
-          OptionsService.section[key] = response[key];
-          deferred.resolve();
-        });
-      }
-
-      Object.keys(default_options).map(function(key) {
-        promisedOptions.push(Resolver.deferr(configOptions, key));
-      });
-
-      var deferred = $q.defer();
-      $q.all(promisedOptions).then(function () {
-        deferred.resolve(OptionsService);
-      });
-
-      return deferred.promise;
+      return OptionsService;
     });

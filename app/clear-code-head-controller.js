@@ -1,8 +1,9 @@
 ClearCodeApp.controller('ClearCodeHeadController', function ClearCodeHeadController($scope, Options) {
 
-  Options.then(function (options) {
-    $scope.$watch( function (){ return options.section.css_href.style; }, function (newValue, oldValue) {
-      $scope.css_href = chrome.extension.getURL( 'highlight/styles/' + options.section.css_href.style );
+  Options.ready.then(function () {
+
+    $scope.$watch( function (){ return Options.categories.css_href.style; }, function (newValue, oldValue) {
+      $scope.css_href = chrome.extension.getURL( 'highlight/styles/' + Options.categories.css_href.style );
     });
   });
 });

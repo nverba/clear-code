@@ -1,4 +1,4 @@
-<span class="option-input" ng-repeat="(key, value) in options">
+<span class="option-input" ng-repeat="(key, value) in defaults">
 
   <input ng-if="!value.options" ng-model="model[ key ]" type="{{ value.type }}" min="{{ value.min }}" max="{{ value.max }}" ngPattern="{{ value.options }}">
   <select ng-if="value.options" ng-model="model[ key ]" ng-options="option as option for option in value.options"></select>
@@ -6,4 +6,4 @@
 
 </span>
 
-<button class="reset" ng-click="reset()">Reset</button>
+<button class="reset" ng-click="resetCat()">Reset</button>

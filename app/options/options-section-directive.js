@@ -4,12 +4,12 @@ OptionsApp.directive('optionsSection', function () {
   return {
 
     restrict: 'E',
-    scope: { options: "=", model: "=" },
+    scope: { defaults: "=", model: "=" },
     templateUrl: "options-section-directive.html",
     link: function (scope, elem, attrs) {
 
-      scope.reset = function () {
-        angular.forEach(scope.options, function (value, key) {
+      scope.resetCat = function () {
+        angular.forEach(scope.defaults, function (value, key) {
           scope.model[key] = value.default;
         });
       };
