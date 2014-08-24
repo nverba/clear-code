@@ -27,11 +27,5 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 chrome.contextMenus.create({ title: "Open selection with Clear-Code", contexts: ["all"], onclick: openCode });
 
 function openCode(context, tab) {
-
- // console.log('Called Selection');
- // console.log(context.selectionText.replace(/(?:\r\n|\r|\n)/g, '<br />'));
-
   chrome.tabs.sendMessage(tab.id, { openSelection: true });
-  //chrome.tabs.sendMessage(tab.id, { openCode: JSON.stringify(code.innerHTML) });
-  //chrome.tabs.sendMessage(tab.id, { frame: { display: 'block' }});
 }
