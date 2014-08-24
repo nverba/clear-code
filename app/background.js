@@ -1,7 +1,4 @@
-var frameReadyRequest;
-var frameReady = new Promise(function(resolve, reject){
-  frameReadyRequest = resolve;
-});
+var tabs = {};
 
 function injectButtons() {
 
@@ -17,13 +14,13 @@ function openSelection(context, tab) {
 
   chrome.tabs.executeScript({
     file: 'inject-frame.js'
-  }, requestOpenSelection);
-
-  function requestOpenSelection() {
-    frameReady.then(function() {
+  }, function () {
+    if (tabs[tab.id] === 'unlocked') {
       chrome.tabs.sendMessage(tab.id, { openSelection: true });
-    });
-  }
+    } else {
+      tabs[tab.id] = 'pending';
+    }
+  });
 }
 
 function handleMessage(request, sender, sendResponse) {
@@ -33,8 +30,17 @@ function handleMessage(request, sender, sendResponse) {
     chrome.tabs.sendMessage(sender.tab.id, request.tabMessage);
   }
 
-  if (request.frameReady) {
-    frameReadyRequest();
+  if (request.tabLock) {
+    if (tabs[sender.tab.id] !== 'pending') {
+      tabs[sender.tab.id] = 'locked';
+    }
+  }
+
+  if (request.tabUnlock) {
+    if (tabs[sender.tab.id] === 'pending') {
+      chrome.tabs.sendMessage(sender.tab.id, { openSelection: true });
+    }
+    tabs[sender.tab.id] = 'unlocked';
   }
 
   if (request.injectClearCodeFrame) {

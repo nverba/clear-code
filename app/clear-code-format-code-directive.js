@@ -1,4 +1,4 @@
-ClearCodeApp.directive('formatCode', function (Options) {
+ClearCodeApp.directive('formatCode', function (Options, $timeout) {
   'use strict';
 
   return {
@@ -36,7 +36,9 @@ ClearCodeApp.directive('formatCode', function (Options) {
         }
       });
 
-      chrome.runtime.sendMessage({ frameReady: true });
+      $timeout(function () {
+        chrome.runtime.sendMessage({ tabUnlock: true });
+      });
 
     }
   };
