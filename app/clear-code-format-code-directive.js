@@ -15,7 +15,7 @@ ClearCodeApp.directive('formatCode', function (Options) {
       };
 
       scope.formatCode = function format_code(name) {
-        element.innerHTML = code;
+        element.innerText = code;
         if (name) {
           Options.ready.then(function () {
             element.innerText = window[name + '_beautify'](element.innerText, Options.categories[name]);

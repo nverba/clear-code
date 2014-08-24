@@ -9,7 +9,7 @@ var iframe = document.createElement('iframe');
 document.body.appendChild(iframe);
 
 function openCode(element) {
-  var code = JSON.stringify(element.innerHTML);
+  var code = JSON.stringify(element.innerText);
   chrome.runtime.sendMessage({ tabMessage: { openCode: code } });
   iframe.style.display = 'block';
 }
@@ -21,6 +21,7 @@ function injectButton(element) {
   button.className = 'clear-code';
   button.onclick = function () {
     openCode(element);
+    console.log(element);
   };
   div.appendChild(button);
   element.appendChild(div);
@@ -31,9 +32,16 @@ for (var i=0, max=elements.length; i < max; i++) {
 }
 
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
+
   if (request.frame) {
     if (request.frame.display) {
       iframe.style.display = request.frame.display;
     }
+  }
+
+  if (request.openSelection) {
+
+    chrome.runtime.sendMessage({ tabMessage: { openCode: JSON.stringify(window.getSelection().toString()) } });
+    iframe.style.display = 'block';
   }
 });
