@@ -10,11 +10,13 @@ ClearCodeApp.directive('formatCode', function (Options) {
           code    = "";
 
       scope.highlightCode = function highlight_code() {
+
         element.className = "";
         hljs.highlightBlock(element);
       };
 
       scope.formatCode = function format_code(name) {
+
         element.innerText = code;
         if (name) {
           Options.ready.then(function () {
@@ -33,6 +35,8 @@ ClearCodeApp.directive('formatCode', function (Options) {
           scope.formatCode();
         }
       });
+
+      chrome.runtime.sendMessage({ frameReady: true });
 
     }
   };
