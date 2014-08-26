@@ -5,11 +5,13 @@ function injectButton(element) {
   var button = document.createElement('button');
   button.style.backgroundImage = 'url(' + chrome.extension.getURL("icons/icon19.png") + ')';
   button.className = 'clear-code';
+  button.innerText = "Open with Clear Code";
   button.onclick = function () {
     openCode(element);
   };
+  div.className = "clear-code-top-button";
   div.appendChild(button);
-  element.appendChild(div);
+  element.parentElement.insertBefore(div, element.nextSibling);
 }
 
 function openCode(element) {
