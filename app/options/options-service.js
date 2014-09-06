@@ -1,6 +1,6 @@
 angular.module('optionsService', ['defaultOptions'])
   .factory('Options',
-    function (default_options, Resolver, $q, $rootScope) {
+    function OptionsService(default_options, Resolver, $q, $rootScope) {
 
       var OptionsService  = {};
 
