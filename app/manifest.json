@@ -23,6 +23,6 @@
     "scripts": ["background.js"],
     "persistent": true
   },
-  "options_page": "options/index.html",
+  "options_page": "bower_components/angular-chrome-options/app/index.html",
   "web_accessible_resources": ["icons/icon19.png", "clear-code-frame.html"]
 }

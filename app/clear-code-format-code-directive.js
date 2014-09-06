@@ -1,4 +1,4 @@
-ClearCodeApp.directive('formatCode', function (Options, $timeout) {
+ClearCodeApp.directive('formatCode', function (options, $timeout) {
   'use strict';
 
   return {
