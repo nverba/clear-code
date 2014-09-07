@@ -1,0 +1,127 @@
+{
+  "app_name": "Clear Code",
+  "branding": false,
+  "pages": [{
+    "label": "Highlighter",
+    "id": "highlighter",
+    "categories": [{
+      "label": "Options",
+      "id": "highlighter_options",
+      "options": [{
+        "label": "Theme",
+        "id": "css_theme",
+        "default": "default.css",
+        "type": "options",
+        "options": [
+          "arta.css",
+          "atelier-heath.light.css",
+          "codepen-embed.css",
+          "github.css",
+          "magula.css",
+          "pojoaque.css",
+          "solarized_light.css",
+          "vs.css",
+          "ascetic.css",
+          "atelier-lakeside.dark.css",
+          "color-brewer.css",
+          "googlecode.css",
+          "mono-blue.css",
+          "sunburst.css",
+          "xcode.css",
+          "atelier-dune.dark.css",
+          "atelier-lakeside.light.css",
+          "dark.css",
+          "hybrid.css",
+          "monokai.css",
+          "railscasts.css",
+          "tomorrow.css",
+          "zenburn.css",
+          "atelier-dune.light.css",
+          "atelier-seaside.dark.css",
+          "default.css",
+          "idea.css",
+          "monokai_sublime.css",
+          "rainbow.css",
+          "tomorrow-night-blue.css",
+          "atelier-forest.dark.css",
+          "atelier-seaside.light.css",
+          "docco.css",
+          "ir_black.css",
+          "obsidian.css",
+          "school_book.css",
+          "tomorrow-night-bright.css",
+          "atelier-forest.light.css",
+          "brown_paper.css",
+          "far.css",
+          "kimbie.dark.css",
+          "paraiso.dark.css",
+          "tomorrow-night.css",
+          "atelier-heath.dark.css",
+          "foundation.css",
+          "kimbie.light.css",
+          "paraiso.light.css",
+          "solarized_dark.css",
+          "tomorrow-night-eighties.css"
+        ]
+      }]
+    }]
+  }, {
+    "label": "JS Beautifier",
+    "id": "js_beautifier",
+    "categories": [{
+      "label": "Options",
+      "id": "js_options",
+      "options": [{
+          "id": "indent size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+        }, {
+          "id": "indent_char", "label": "Indent char", "default": " "
+        }, {
+          "id": "indent_level", "label": "Indent level", "default": 0, "type": "number"
+        }, {
+          "id": "indent_with_tabs", "label": "Indent with tabs", "default": false, "type": "checkbox"
+        }, {
+          "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
+        }, {
+          "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "type": "number"
+        }, {
+          "id": "jslint_happy", "label": "Jslint happy", "default": false, "type": "checkbox"
+        }, {
+          "id": "brace_style", "label": "Brace style", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
+        }, {
+          "id": "keep_array_indentation", "label": "Keep array indentation", "default": false, "type": "checkbox"
+        }, {
+          "id": "keep_function_indentation", "label": "Keep function indentation", "default": false, "type": "checkbox"
+        }, {
+          "id": "space_before_conditional", "label": "Space before conditional", "default": true, "type": "checkbox"
+        }, {
+          "id": "break_chained_methods", "label": "Break chained methods", "default": false, "type": "checkbox"
+        }, {
+          "id": "eval_code", "label": "Eval code", "default": false, "type": "checkbox"
+        }, {
+          "id": "unescape_strings", "label": "Unescape strings", "default": false, "type": "checkbox"
+        }, {
+          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
+      }]
+    }]
+  }, {
+    "label": "HTML Beautifier",
+    "id": "html_beautifier",
+    "categories": [{
+      "label": "Options",
+      "id": "html_options",
+      "options": [{
+
+      }]
+    }]
+  }, {
+    "label": "CSS Beautifier",
+    "id": "css_beautifier",
+    "categories": [{
+      "label": "Options",
+      "id": "css_options",
+      "options": [{
+
+      }]
+    }]
+  }]
+}
