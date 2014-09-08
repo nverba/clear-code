@@ -10,5 +10,9 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
   if (namespace !== 'local' || !changes.clearCodeOptions ) { return; }
 
   css_link.href = 'highlight/styles/' + changes.clearCodeOptions.newValue.highlighter_options.css_theme;
-  css_link.display = 'block';
+
+  // force css repaint after href updated, needed for browsing theme drop down with arrow keys.
+  setTimeout(function () {
+    css_link.style.display = 'block';
+  }, 50);
 });
