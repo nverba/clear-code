@@ -15,7 +15,7 @@
   <body ng-controller="ClearCodeFrameController">
 
     <header id='clear-code-header'>
-      <span id="clear-code-title"></span>
+      <span id="clear-code-title">Clear Code</span>
 
       Beautifiers:
       <button ng-click="formatCode('js')">JS</button>
@@ -28,8 +28,8 @@
       </button>
     </header>
 
-    <div id="code-container">
-      <pre id='clear-code-pre' class="hljs">
+    <div id="clear-code-container" class="hljs">
+      <pre id='clear-code-pre'>
         <code id='clear-code-code' format-code></code>
       </pre>
     </div>

@@ -1,5 +1,6 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box; box-sizing: border-box;
+  outline: none;
  }
 
 @font-face {
@@ -25,9 +26,8 @@
 
 header#clear-code-header {
   font-family: "roboto-black-italic";
-  border-bottom: 3px solid #DBDADA;
   font-size: 19px;
-  color: white;
+  color: #666;
   text-align: right;
   padding-right: 50px;
   display: block;
@@ -35,72 +35,71 @@ header#clear-code-header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 40px;
-  background-color: #598ad8;
+  line-height: 55px;
+  height: 55px;
   z-index: 2;
-  border-right: 5px solid #DBDADA;
-}
-
-header#clear-code-header::after {
-  background-color: rgba(222, 231, 0, 0.44);
-  box-shadow: inset 2px 1px 15px rgba(0, 0, 0, 0.83);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.68);
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #clear-code-title {
-  font-family: 'roboto-black-italic';
-  line-height: 20px;
-  color: #F1F1F1;
-  padding: 10px;
   position: absolute;
-  left: 0px;
-  border-right: 5px solid #DBDADA;
+  left: 18px;
   font-size: 22px;
   margin: 0px;
-  background-color: rgba(222, 231, 0, 0.44);
-  box-shadow: inset 2px 1px 15px rgba(0, 0, 0, 0.83);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.68);
 }
 
 button#close {
+  color: #666;
   position: absolute;
-  padding-right: 0px;
-  right: 6px;
+  padding: 3px;
+  right: 2px;
   border: none;
+}
+
+button#close:hover {
+  color: #333;
 }
 
 header button {
   font-family: "roboto-black-italic";
   margin: 4px 3px;
   padding: 5px 10px;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, 0.45);
   height: 30px;
-  border-radius: 15px;
   cursor: pointer;
   font-size: 19px;
   line-height: 20px;
-  color: #FFF;
+  color: #AAA;
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+header button:hover {
+  color: #888;
+  box-shadow: 1px 1px 5px rgba(183, 181, 189, 0.85);
+  border-radius: 3px;
+}
+
+#clear-code-container {
+  position: absolute;
+  top: 55px;
+  left: 150px;
+  right: 150px;
+  bottom: 0;
+  padding: 20px 20px 10px 20px;
+  -webkit-box-shadow: rgba(24, 24, 24, 0.28) 1px 1px 8px;
+  box-shadow: rgba(24, 24, 24, 0.28) 1px 1px 8px;
+  overflow: hidden;
 }
 
 #clear-code-pre {
   font-family: 'Roboto';
   font-size: 13px;
   position: absolute;
-  top: 80px;
-  bottom: 0;
-  left: 100px;
-  right: 100px;
-  margin: 0 0 0 0;
-  padding: 20px 20px 10px 20px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px;
-  border: 1px solid #EEE;
+  top: 10px;
+  left: 20px;
+  right: 10px;
+  bottom: 10px;
+  overflow: auto;
+  margin: 0;
 }
 
 #clear-code-code {
@@ -128,7 +127,7 @@ header button {
 }
 
 ::-webkit-scrollbar-corner {
-
+  background-color: transparent;
 }
 
 html, body {
