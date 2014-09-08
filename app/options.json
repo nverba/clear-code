@@ -76,7 +76,7 @@
       "label": "Options",
       "id": "js_options",
       "options": [{
-          "id": "indent size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+          "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
         }, {
           "id": "indent_char", "label": "Indent char", "default": " "
         }, {
