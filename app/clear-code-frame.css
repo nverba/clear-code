@@ -61,6 +61,7 @@ button#close:hover {
 
 header button {
   font-family: "roboto-black-italic";
+  position: relative;
   margin: 4px 3px;
   padding: 5px 10px;
   height: 30px;
@@ -76,6 +77,19 @@ header button:hover {
   color: #888;
   box-shadow: 1px 1px 5px rgba(183, 181, 189, 0.85);
   border-radius: 3px;
+}
+
+header button.active {
+  color: #333;
+}
+
+header button.active:after {
+  border-top: 6px solid #333;
+  left: 0;
+  top: -13px;
+  width: 100%;
+  position: absolute;
+  content: ' ';
 }
 
 #clear-code-container {
@@ -95,7 +109,7 @@ header button:hover {
   font-size: 13px;
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 30px;
   right: 10px;
   bottom: 10px;
   overflow: auto;

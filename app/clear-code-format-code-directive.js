@@ -22,9 +22,11 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
           options.ready.then(function () {
             element.innerText = window[name + '_beautify'](element.innerText, options.categories[name + '_options']);
             scope.highlightCode();
+            scope.active_beau = name;
           });
         } else {
           scope.highlightCode();
+          scope.active_beau = '';
         }
       };
 
