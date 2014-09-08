@@ -19,8 +19,8 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
 
         element.innerText = code;
         if (name) {
-          Options.ready.then(function () {
-            element.innerText = window[name + '_beautify'](element.innerText, Options.categories[name]);
+          options.ready.then(function () {
+            element.innerText = window[name + '_beautify'](element.innerText, options.categories[name + '_options']);
             scope.highlightCode();
           });
         } else {
