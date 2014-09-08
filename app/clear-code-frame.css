@@ -92,14 +92,15 @@ header button {
   font-family: 'Roboto';
   font-size: 13px;
   position: absolute;
-  top: 40px;
+  top: 80px;
   bottom: 0;
-  left: 50px;
-  right: 0;
+  left: 100px;
+  right: 100px;
   margin: 0 0 0 0;
   padding: 20px 20px 10px 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 15px;
+  border: 1px solid #EEE;
 }
 
 #clear-code-code {
@@ -117,6 +118,7 @@ header button {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
+  margin: 10px;
   background-color: #363633;
 }
 
@@ -134,7 +136,7 @@ html, body {
   height: 100%;
   border: 0;
   margin: 0;
-  background-color: #363633;
+  background-color: #eee;
 }
 
 
