@@ -63,6 +63,11 @@
           "solarized_dark.css",
           "tomorrow-night-eighties.css"
         ]
+      }, {
+        "type": "iframe",
+        "width": "100%",
+        "height": "300px",
+        "src": "../../../sample.html"
       }]
     }]
   }, {

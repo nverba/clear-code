@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" id="css_theme" >
+
+  </head>
+  <body>
+
+    <pre id='clear-code-pre'>
+      <code id='clear-code-code'>
+        var assert = require("assert")
+        describe('Array', function(){
+          describe('#indexOf()', function(){
+            it('should return -1 when the value is not present', function(){
+              assert.equal(-1, [1,2,3].indexOf(5));
+              assert.equal(-1, [1,2,3].indexOf(0));
+            })
+          })
+        })
+      </code>
+    </pre>
+    <script src="highlight/highlight.pack.js"></script>
+    <script src="sample.js"></script>
+  </body>
+</html>
