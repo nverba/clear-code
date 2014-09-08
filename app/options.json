@@ -73,28 +73,58 @@
     "label": "JS Beautifier",
     "id": "js_beautifier",
     "categories": [{
-      "label": "Options",
+      "label": "",
       "id": "js_options",
       "options": [{
-          "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+          "type": "h3",
+          "text": "Indentation"
         }, {
-          "id": "indent_char", "label": "Indent char", "default": " "
+          "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
         }, {
           "id": "indent_level", "label": "Indent level", "default": 0, "type": "number"
         }, {
           "id": "indent_with_tabs", "label": "Indent with tabs", "default": false, "type": "checkbox"
         }, {
+          "id": "keep_array_indentation", "label": "Keep array indentation", "default": false, "type": "checkbox"
+        }, {
+          "id": "keep_function_indentation", "label": "Keep function indentation", "default": false, "type": "checkbox"
+        }, {
+          "type": "span",
+          "content": [{
+            "text": "Indent code with custom character, defaults to a single space."
+          }]
+        }, {
+          "id": "indent_char", "label": "Indent character", "default": " "
+        }, {
+          "type": "h3",
+          "text": "Newlines"
+        }, {
           "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
         }, {
           "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "type": "number"
         }, {
+          "type": "h3",
+          "text": "JSLint"
+        }, {
           "id": "jslint_happy", "label": "Jslint happy", "default": false, "type": "checkbox"
         }, {
-          "id": "brace_style", "label": "Brace style", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
+          "type": "h3",
+          "text": "Braces"
         }, {
-          "id": "keep_array_indentation", "label": "Keep array indentation", "default": false, "type": "checkbox"
+          "id": "brace_style", "label": "Brace style", "type": "options", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
         }, {
-          "id": "keep_function_indentation", "label": "Keep function indentation", "default": false, "type": "checkbox"
+          "type": "h3",
+          "text": "Wrap"
+        }, {
+          "type": "span",
+          "content": [{
+            "text": ""
+          }]
+        }, {
+          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
+        }, {
+          "type": "h3",
+          "text": "Advanced"
         }, {
           "id": "space_before_conditional", "label": "Space before conditional", "default": true, "type": "checkbox"
         }, {
@@ -103,18 +133,43 @@
           "id": "eval_code", "label": "Eval code", "default": false, "type": "checkbox"
         }, {
           "id": "unescape_strings", "label": "Unescape strings", "default": false, "type": "checkbox"
-        }, {
-          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
       }]
     }]
   }, {
     "label": "HTML Beautifier",
     "id": "html_beautifier",
     "categories": [{
-      "label": "Options",
+      "label": "",
       "id": "html_options",
       "options": [{
-
+        "type": "h3",
+        "text": "Indentation"
+      }, {
+        "id": "indent_inner_html", "label": "Indent inner_html", "default": false, "type": "checkbox"
+      }, {
+        "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+      }, {
+        "type": "span",
+        "content": [{
+          "text": "Indent code with custom character, defaults to a single space."
+        }]
+      }, {
+        "id": "indent_char", "label": "Indent character", "default": " "
+      }, {
+        "type": "h3",
+        "text": "Braces"
+      }, {
+        "id": "brace_style", "label": "Brace style", "type": "options", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
+      }, {
+        "id": "indent_scripts", "label": "Indent scripts", "type": "options", "default": "normal", "options": ["normal", "keep", "separate"]
+      }, {
+        "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
+      }, {
+        "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
+      }, {
+        "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "type": "number"
+      }, {
+        "id": "indent_handlebars", "label": "Indent handlebars", "default": false, "type": "checkbox"
       }]
     }]
   }, {
@@ -124,7 +179,14 @@
       "label": "Options",
       "id": "css_options",
       "options": [{
-
+        "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+      }, {
+        "type": "span",
+        "content": [{
+          "text": "Indent code with custom character, defaults to a single space."
+        }]
+      }, {
+        "id": "indent_char", "label": "Indent character", "default": " "
       }]
     }]
   }]
