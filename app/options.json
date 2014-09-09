@@ -8,6 +8,8 @@
       "label": "Options",
       "id": "highlighter_options",
       "options": [{
+        "id": "margin_size", "label": "Margin size", "default": 100, "type": "number"
+      }, {
         "label": "Theme",
         "id": "css_theme",
         "default": "default.css",
@@ -47,10 +49,8 @@
           "docco.css",
           "ir_black.css",
           "obsidian.css",
-          "school_book.css",
           "tomorrow-night-bright.css",
           "atelier-forest.light.css",
-          "brown_paper.css",
           "far.css",
           "kimbie.dark.css",
           "paraiso.dark.css",
