@@ -2,15 +2,15 @@
   "app_name": "Clear Code",
   "branding": false,
   "pages": [{
-    "label": "Highlighter",
-    "id": "highlighter",
+    "label": "Theme",
+    "id": "theme",
     "categories": [{
       "label": "Options",
-      "id": "highlighter_options",
+      "id": "theme_options",
       "options": [{
         "id": "margin_size", "label": "Margin size", "default": 100, "type": "number"
       }, {
-        "id": "font_size", "label": "Font size", "default": 12, "type": "number"
+        "id": "font_size", "label": "Font size", "default": 14, "type": "number"
       }, {
         "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
         "options": [
@@ -91,6 +91,25 @@
       }]
     }]
   }, {
+    "label": "Highlighter",
+    "id": "highlighter",
+    "categories": [{
+      "label": "Languages",
+      "id": "highlighter_options",
+      "options": [{
+          "type": "span",
+          "content": [{
+            "text": "Restricting the detected languages makes detection more reliable."
+          }]
+        }, {
+          "id": "html", "label": "HTML", "default": true, "type": "checkbox"
+        }, {
+          "id": "js", "label": "JS", "default": true, "type": "checkbox"
+        }, {
+          "id": "css", "label": "CSS", "default": true, "type": "checkbox"
+      }]
+    }]
+  },{
     "label": "JS Beautifier",
     "id": "js_beautifier",
     "categories": [{
