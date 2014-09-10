@@ -10,6 +10,19 @@
       "options": [{
         "id": "margin_size", "label": "Margin size", "default": 100, "type": "number"
       }, {
+        "id": "font_size", "label": "Font size", "default": 12, "type": "number"
+      }, {
+        "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
+        "options": [
+          "source code pro",
+          "open dyslexic mono",
+          "ubuntu mono",
+          "ubuntu mono bold",
+          "cutive mono",
+          "droid sans mono",
+          "share tech mono"
+        ]
+      }, {
         "label": "Theme",
         "id": "css_theme",
         "default": "default.css",
@@ -67,6 +80,14 @@
         "width": "100%",
         "height": "300px",
         "src": "../../../sample.html"
+      }, {
+        "type": "span",
+        "content": [{
+          "text": "The OpenDyslexic font by Abelardo Gonzalez is available at "
+        }, {
+          "text": "dyslexicfonts.com",
+          "href": "http://dyslexicfonts.com"
+        }]
       }]
     }]
   }, {

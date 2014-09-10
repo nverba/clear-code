@@ -12,7 +12,7 @@
     <script src="highlight/highlight.pack.js"></script>
 
   </head>
-  <body ng-controller="ClearCodeFrameController">
+  <body ng-controller="ClearCodeFrameController" ng-style="bodyStyle">
 
     <header id='clear-code-header'>
       <span id="clear-code-title">Clear Code</span>
@@ -30,7 +30,7 @@
 
     <div id="clear-code-container" class="hljs" style="left: {{ margins }}px; right: {{ margins }}px">
       <pre id='clear-code-pre'>
-        <code id='clear-code-code' format-code></code>
+        <code id='clear-code-code' format-code ng-style="codeStyle"></code>
       </pre>
     </div>
 

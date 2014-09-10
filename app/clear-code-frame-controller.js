@@ -9,10 +9,6 @@ ClearCodeApp.controller('ClearCodeFrameController', function ClearCodeFrameContr
   options.ready.then(function () {
     $scope.margins     = options.categories.highlighter_options.margin_size;
     $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
-
-    console.log($scope.menu_margin);
+    $scope.codeStyle   = { 'font-family': options.categories.highlighter_options.font_family, 'font-size': options.categories.highlighter_options.font_size + 'px' };
   });
-
-
-
 });
