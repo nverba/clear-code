@@ -7,14 +7,14 @@ ClearCodeApp.controller('ClearCodeFrameController', function ClearCodeFrameContr
   var container = document.getElementById('clear-code-container');
 
   options.ready.then(function () {
-    $scope.margins     = options.categories.highlighter_options.margin_size;
+    $scope.margins     = options.categories.theme_options.margin_size;
     $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
-    $scope.codeStyle   = { 'font-family': options.categories.highlighter_options.font_family, 'font-size': options.categories.highlighter_options.font_size + 'px' };
+    $scope.codeStyle   = { 'font-family': options.categories.theme_options.font_family, 'font-size': options.categories.theme_options.font_size + 'px' };
 
-    $scope.$watch( function (){ return options.categories.highlighter_options; }, function (newValue, oldValue) {
-      $scope.margins     = options.categories.highlighter_options.margin_size;
+    $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
+      $scope.margins     = options.categories.theme_options.margin_size;
       $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
-      $scope.codeStyle   = { 'font-family': options.categories.highlighter_options.font_family, 'font-size': options.categories.highlighter_options.font_size + 'px' };
+      $scope.codeStyle   = { 'font-family': options.categories.theme_options.font_family, 'font-size': options.categories.theme_options.font_size + 'px' };
     });
   });
 });

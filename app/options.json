@@ -95,7 +95,7 @@
     "id": "highlighter",
     "categories": [{
       "label": "Languages",
-      "id": "highlighter_options",
+      "id": "theme_options",
       "options": [{
           "type": "span",
           "content": [{
