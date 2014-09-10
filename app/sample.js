@@ -3,8 +3,6 @@ var code     = document.getElementById('clear-code-code');
 
 chrome.storage.local.get({ 'clearCodeOptions': { theme_options: { css_theme: 'default.css' }}}, function (response) {
 
-  console.log(response.clearCodeOptions.theme_options.css_theme);
-
   css_link.href = 'highlight/styles/' + response.clearCodeOptions.theme_options.css_theme + '.css';
   code.style['font-family'] = response.clearCodeOptions.theme_options.font_family;
   code.style['font-size'] = response.clearCodeOptions.theme_options.font_size + 'px';
