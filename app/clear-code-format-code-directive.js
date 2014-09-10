@@ -7,7 +7,14 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
     link: function (scope, elem, attrs) {
 
       var element = elem[0],
-          code    = "";
+          code    = "",
+          pre     = document.getElementById('clear-code-pre');
+
+      function highlight_code() {
+
+        pre.className = scope.active_beau ? 'prettyprint lang-' + scope.active_beau : "prettyprint";
+        prettyPrint();
+      }
 
       scope.formatCode = function format_code(name) {
 
@@ -15,12 +22,12 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
         if (name) {
           options.ready.then(function () {
             element.innerText = window[name + '_beautify'](element.innerText, options.categories[name + '_options']);
-            prettyPrint();
             scope.active_beau = name;
+            highlight_code();
           });
         } else {
-          prettyPrint();
           scope.active_beau = '';
+          highlight_code();
         }
       };
 
