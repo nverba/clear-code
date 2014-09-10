@@ -6,10 +6,22 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="clear-code-frame.css">
-    <link rel="stylesheet" ng-href="{{ css.highlighter }}" >
     <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" ng-href="{{ css.highlighter }}" >
 
-    <script src="highlight/highlight.pack.js"></script>
+    <style>
+      pre {
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        background-color: #fff;
+      }
+
+      pre.prettyprint, code.prettyprint, pre .kwd {
+        font-weight: normal !important
+      }
+    </style>
 
   </head>
   <body ng-controller="ClearCodeFrameController" ng-style="bodyStyle">
@@ -28,9 +40,9 @@
       </button>
     </header>
 
-    <div id="clear-code-container" class="hljs" style="left: {{ margins }}px; right: {{ margins }}px">
-      <pre id='clear-code-pre'>
-        <code id='clear-code-code' format-code ng-style="codeStyle"></code>
+    <div id="clear-code-container" style="left: {{ margins }}px; right: {{ margins }}px">
+      <pre id='clear-code-pre' class="prettyprint">
+<code id='clear-code-code' format-code ng-style="codeStyle"></code>
       </pre>
     </div>
 
@@ -38,6 +50,7 @@
     <script src="bower_components/angular-chrome-options/app/js/chrome-options-service.js"></script>
     <script src="bower_components/angular-chrome-options/app/js/chrome-options-config.js"></script>
     <script src="bower_components/angular-resolver/resolver_service.js"></script>
+    <script src="bower_components/google-code-prettify/bin/prettify.min.js"></script>
 
     <script src="bower_components/js-beautify/js/lib/beautify-css.js"></script>
     <script src="bower_components/js-beautify/js/lib/beautify-html.js"></script>

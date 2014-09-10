@@ -1,93 +1,141 @@
 /* Tomorrow Night Eighties Theme */
 /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-title {
-  color: #999999;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-attribute,
-.hljs-tag,
-.hljs-regexp,
-.ruby .hljs-constant,
-.xml .hljs-tag .hljs-title,
-.xml .hljs-pi,
-.xml .hljs-doctype,
-.html .hljs-doctype,
-.css .hljs-id,
-.css .hljs-class,
-.css .hljs-pseudo {
-  color: #f2777a;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-preprocessor,
-.hljs-pragma,
-.hljs-built_in,
-.hljs-literal,
-.hljs-params,
-.hljs-constant {
-  color: #f99157;
-}
-
-/* Tomorrow Yellow */
-.ruby .hljs-class .hljs-title,
-.css .hljs-rules .hljs-attribute {
-  color: #ffcc66;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-value,
-.hljs-inheritance,
-.hljs-header,
-.ruby .hljs-symbol,
-.xml .hljs-cdata {
-  color: #99cc99;
-}
-
-/* Tomorrow Aqua */
-.css .hljs-hexcolor {
-  color: #66cccc;
-}
-
-/* Tomorrow Blue */
-.hljs-function,
-.python .hljs-decorator,
-.python .hljs-title,
-.ruby .hljs-function .hljs-title,
-.ruby .hljs-title .hljs-keyword,
-.perl .hljs-sub,
-.javascript .hljs-title,
-.coffeescript .hljs-title {
-  color: #6699cc;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.javascript .hljs-function {
-  color: #cc99cc;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
+.prettyprint {
   background: #2d2d2d;
-  color: #cccccc;
-  padding: 0.5em;
+  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-.coffeescript .javascript,
-.javascript .xml,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.5;
+.pln {
+  color: #cccccc;
+}
+
+@media screen {
+  .str {
+    color: #99cc99;
+  }
+
+  .kwd {
+    color: #cc99cc;
+  }
+
+  .com {
+    color: #999999;
+  }
+
+  .typ {
+    color: #6699cc;
+  }
+
+  .lit {
+    color: #f99157;
+  }
+
+  .pun {
+    color: #cccccc;
+  }
+
+  .opn {
+    color: #cccccc;
+  }
+
+  .clo {
+    color: #cccccc;
+  }
+
+  .tag {
+    color: #f2777a;
+  }
+
+  .atn {
+    color: #f99157;
+  }
+
+  .atv {
+    color: #66cccc;
+  }
+
+  .dec {
+    color: #f99157;
+  }
+
+  .var {
+    color: #f2777a;
+  }
+
+  .fun {
+    color: #6699cc;
+  }
+}
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004444;
+  }
+
+  .pun, .opn, .clo {
+    color: #444400;
+  }
+
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #440044;
+  }
+
+  .atv {
+    color: #006600;
+  }
+}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  /* */
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  /* */
 }

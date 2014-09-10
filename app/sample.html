@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
 
+    <link rel="stylesheet" href="bower_components/google-code-prettify/bin/prettify.min.css">
     <link rel="stylesheet" id="css_theme" >
 
     <style type="text/css">
@@ -58,12 +59,23 @@
         src: url("fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
       }
 
+      pre {
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+      }
+
+      pre.prettyprint, code.prettyprint, pre .kwd {
+        font-weight: normal !important
+      }
+
     </style>
 
   </head>
   <body>
 
-    <pre id='clear-code-pre'  class="hljs">
+    <pre id='clear-code-pre'  class="prettyprint">
       <code id='clear-code-code'>
   var assert = require("assert")
   describe('Array', function(){
@@ -76,7 +88,7 @@
   })
       </code>
     </pre>
-    <script src="highlight/highlight.pack.js"></script>
+    <script src="bower_components/google-code-prettify/bin/prettify.min.js"></script>
     <script src="sample.js"></script>
   </body>
 </html>

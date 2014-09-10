@@ -9,23 +9,17 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
       var element = elem[0],
           code    = "";
 
-      scope.highlightCode = function highlight_code() {
-
-        element.className = "";
-        hljs.highlightBlock(element);
-      };
-
       scope.formatCode = function format_code(name) {
 
         element.innerText = code;
         if (name) {
           options.ready.then(function () {
             element.innerText = window[name + '_beautify'](element.innerText, options.categories[name + '_options']);
-            scope.highlightCode();
+            prettyPrint();
             scope.active_beau = name;
           });
         } else {
-          scope.highlightCode();
+          prettyPrint();
           scope.active_beau = '';
         }
       };

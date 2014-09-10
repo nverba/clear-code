@@ -1,163 +1,51 @@
-/*
+/* Pretty printing styles. Used with prettify.js. */
+/* Vim sunburst theme by David Leibovic */
 
-Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net>
+pre .str, code .str { color: #65B042; } /* string  - green */
+pre .kwd, code .kwd { color: #E28964; } /* keyword - dark pink */
+pre .com, code .com { color: #AEAEAE; font-style: italic; } /* comment - gray */
+pre .typ, code .typ { color: #89bdff; } /* type - light blue */
+pre .lit, code .lit { color: #3387CC; } /* literal - blue */
+pre .pun, code .pun { color: #fff; } /* punctuation - white */
+pre .pln, code .pln { color: #fff; } /* plaintext - white */
+pre .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
+pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
+pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
+pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
 
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #000;
-  color: #f8f8f8;
+pre.prettyprint, code.prettyprint {
+	background-color: #000;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border-radius: 8px;
 }
 
-.hljs-comment,
-.hljs-template_comment,
-.hljs-javadoc {
-  color: #aeaeae;
-  font-style: italic;
+pre.prettyprint {
+	width: 95%;
+	margin: 1em auto;
+	padding: 1em;
+	white-space: pre-wrap;
 }
 
-.hljs-keyword,
-.ruby .hljs-function .hljs-keyword,
-.hljs-request,
-.hljs-status,
-.nginx .hljs-title {
-  color: #e28964;
-}
 
-.hljs-function .hljs-keyword,
-.hljs-sub .hljs-keyword,
-.method,
-.hljs-list .hljs-title {
-  color: #99cf50;
-}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
-.hljs-string,
-.hljs-tag .hljs-value,
-.hljs-cdata,
-.hljs-filter .hljs-argument,
-.hljs-attr_selector,
-.apache .hljs-cbracket,
-.hljs-date,
-.tex .hljs-command,
-.coffeescript .hljs-attribute {
-  color: #65b042;
-}
-
-.hljs-subst {
-  color: #daefa3;
-}
-
-.hljs-regexp {
-  color: #e9c062;
-}
-
-.hljs-title,
-.hljs-sub .hljs-identifier,
-.hljs-pi,
-.hljs-tag,
-.hljs-tag .hljs-keyword,
-.hljs-decorator,
-.hljs-shebang,
-.hljs-prompt {
-  color: #89bdff;
-}
-
-.hljs-class .hljs-title,
-.haskell .hljs-type,
-.smalltalk .hljs-class,
-.hljs-javadoctag,
-.hljs-yardoctag,
-.hljs-phpdoc {
-  text-decoration: underline;
-}
-
-.hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.hljs-number {
-  color: #3387cc;
-}
-
-.hljs-params,
-.hljs-variable,
-.clojure .hljs-attribute {
-  color: #3e87e3;
-}
-
-.css .hljs-tag,
-.hljs-rules .hljs-property,
-.hljs-pseudo,
-.tex .hljs-special {
-  color: #cda869;
-}
-
-.css .hljs-class {
-  color: #9b703f;
-}
-
-.hljs-rules .hljs-keyword {
-  color: #c5af75;
-}
-
-.hljs-rules .hljs-value {
-  color: #cf6a4c;
-}
-
-.css .hljs-id {
-  color: #8b98ab;
-}
-
-.hljs-annotation,
-.apache .hljs-sqbracket,
-.nginx .hljs-built_in {
-  color: #9b859d;
-}
-
-.hljs-preprocessor,
-.hljs-pragma {
-  color: #8996a8;
-}
-
-.hljs-hexcolor,
-.css .hljs-value .hljs-number {
-  color: #dd7b3b;
-}
-
-.css .hljs-function {
-  color: #dad085;
-}
-
-.diff .hljs-header,
-.hljs-chunk,
-.tex .hljs-formula {
-  background-color: #0e2231;
-  color: #f8f8f8;
-  font-style: italic;
-}
-
-.diff .hljs-change {
-  background-color: #4a410d;
-  color: #f8f8f8;
-}
-
-.hljs-addition {
-  background-color: #253b22;
-  color: #f8f8f8;
-}
-
-.hljs-deletion {
-  background-color: #420e09;
-  color: #f8f8f8;
-}
-
-.coffeescript .javascript,
-.javascript .xml,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.5;
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
 }

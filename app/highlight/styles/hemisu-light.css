@@ -1,4 +1,5 @@
-/* GitHub Theme */
+/* Hemisu Light */
+/* Original theme - http://noahfrederick.com/vim-color-scheme-hemisu/ */
 .prettyprint {
   background: white;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
@@ -9,64 +10,64 @@
 }
 
 .pln {
-  color: #333333;
+  color: #111111;
 }
 
 @media screen {
   .str {
-    color: #dd1144;
+    color: #739200;
   }
 
   .kwd {
-    color: #333333;
+    color: #739200;
   }
 
   .com {
-    color: #999988;
+    color: #999999;
   }
 
   .typ {
-    color: #445588;
+    color: #ff0055;
   }
 
   .lit {
-    color: #445588;
+    color: #538192;
   }
 
   .pun {
-    color: #333333;
+    color: #111111;
   }
 
   .opn {
-    color: #333333;
+    color: #111111;
   }
 
   .clo {
-    color: #333333;
+    color: #111111;
   }
 
   .tag {
-    color: navy;
+    color: #111111;
   }
 
   .atn {
-    color: teal;
+    color: #739200;
   }
 
   .atv {
-    color: #dd1144;
+    color: #ff0055;
   }
 
   .dec {
-    color: #333333;
+    color: #111111;
   }
 
   .var {
-    color: teal;
+    color: #111111;
   }
 
   .fun {
-    color: #990000;
+    color: #538192;
   }
 }
 @media print, projection {

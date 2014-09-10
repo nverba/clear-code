@@ -16,6 +16,7 @@
     "js-beautify": "~1.5.1",
     "angular": "~1.2.22",
     "angular-chrome-options": "git@github.com:nverba/angular-chrome-options.git",
-    "angular-resolver": "git@github.com:nverba/angular-resolver.git"
+    "angular-resolver": "git@github.com:nverba/angular-resolver.git",
+    "google-code-prettify": "~1.0.3"
   }
 }
