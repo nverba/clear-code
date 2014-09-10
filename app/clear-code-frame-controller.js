@@ -10,5 +10,11 @@ ClearCodeApp.controller('ClearCodeFrameController', function ClearCodeFrameContr
     $scope.margins     = options.categories.highlighter_options.margin_size;
     $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
     $scope.codeStyle   = { 'font-family': options.categories.highlighter_options.font_family, 'font-size': options.categories.highlighter_options.font_size + 'px' };
+
+    $scope.$watch( function (){ return options.categories.highlighter_options; }, function (newValue, oldValue) {
+      $scope.margins     = options.categories.highlighter_options.margin_size;
+      $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
+      $scope.codeStyle   = { 'font-family': options.categories.highlighter_options.font_family, 'font-size': options.categories.highlighter_options.font_size + 'px' };
+    });
   });
 });
