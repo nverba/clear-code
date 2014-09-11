@@ -23,6 +23,12 @@
       pre.prettyprint, code.prettyprint, pre .kwd {
         font-weight: normal !important
       }
+
+      .prettyprint ol.linenums > li {
+        list-style-type: decimal;
+        color: rgba(122, 122, 122, 0.52);
+      }
+
     </style>
 
   </head>
@@ -44,7 +50,7 @@
 
     <div id="clear-code-container" style="left: {{ margins }}px; right: {{ margins }}px">
       <pre id='clear-code-pre' format-code>
-<code id='clear-code-code' ng-style="codeStyle"></code>
+<code id='clear-code-code'></code>
       </pre>
     </div>
 

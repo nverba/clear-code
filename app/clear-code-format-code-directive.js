@@ -24,6 +24,8 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
 
           pre.innerHTML  = saved_state;
           code = document.getElementById('clear-code-code');
+          code.style['font-family'] = options.categories.theme_options.font_family;
+          code.style['font-size'] = options.categories.theme_options.font_size;
           code.innerHTML = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
           scope.active_beau = name ? name : false;
 

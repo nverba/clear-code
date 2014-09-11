@@ -10,9 +10,38 @@
       "options": [{
         "id": "line_nums", "label": "Line Numbers", "default": false, "type": "checkbox"
       }, {
-        "id": "margin_size", "label": "Margin size", "default": 100, "type": "number"
+        "id": "margin_size", "label": "Margin size", "type": "options", "default": "100",
+        "options": [
+          "0",
+          "25",
+          "50",
+          "75",
+          "100",
+          "155",
+          "180",
+          "210",
+          "250",
+          "300"
+        ]
       }, {
-        "id": "font_size", "label": "Font size", "default": 14, "type": "number"
+        "id": "font_size", "label": "Font size", "type": "options", "default": "12",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
       }, {
         "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
         "options": [
