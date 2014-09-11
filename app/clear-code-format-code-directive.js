@@ -24,7 +24,7 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
 
           pre.innerHTML  = saved_state;
           code = document.getElementById('clear-code-code');
-          code.innerHTML = content;
+          code.innerHTML = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
           scope.active_beau = name ? name : false;
 
           highlight_code();
