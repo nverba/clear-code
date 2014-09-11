@@ -8,6 +8,8 @@
       "label": "Options",
       "id": "theme_options",
       "options": [{
+        "id": "line_nums", "label": "Line Numbers", "default": false, "type": "checkbox"
+      }, {
         "id": "margin_size", "label": "Margin size", "default": 100, "type": "number"
       }, {
         "id": "font_size", "label": "Font size", "default": 14, "type": "number"
