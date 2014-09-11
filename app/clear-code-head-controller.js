@@ -1,4 +1,4 @@
-ClearCodeApp.controller('ClearCodeHeadController', function ClearCodeHeadController($scope, options) {
+ClearCodeApp.controller('ClearCodeHeadController', ['$scope', 'options', function ClearCodeHeadController($scope, options) {
 
   $scope.css = {};
 
@@ -8,4 +8,4 @@ ClearCodeApp.controller('ClearCodeHeadController', function ClearCodeHeadControl
       $scope.css.highlighter = chrome.extension.getURL( 'highlight/styles/' + options.categories.theme_options.css_theme + '.css' );
     });
   });
-});
+}]);

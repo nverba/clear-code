@@ -1,4 +1,4 @@
-ClearCodeApp.controller('ClearCodeFrameController', function ClearCodeFrameController($scope, options) {
+ClearCodeApp.controller('ClearCodeFrameController', ['$scope', 'options', function ClearCodeFrameController($scope, options) {
 
   $scope.closeFrame = function () {
     chrome.runtime.sendMessage({ tabMessage: { frameDisplay: 'none' }});

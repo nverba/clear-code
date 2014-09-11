@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "gulp": "^3.8.7",
-    "karma": "^0.12.21"
+    "karma": "^0.12.21",
+    "karma-mocha": "^0.1.9"
   }
 }
