@@ -8,9 +8,9 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
 
       var element = elem[0],
           pre     = document.getElementById('clear-code-pre'),
+          code    = document.getElementById('clear-code-code'),
           content = '',
-          saved_state = pre.innerHTML,
-          code;
+          saved_state = pre.innerHTML;
 
       function highlight_code() {
 
@@ -24,7 +24,7 @@ ClearCodeApp.directive('formatCode', function (options, $timeout) {
 
           pre.innerHTML  = saved_state;
           code = document.getElementById('clear-code-code');
-          code.innerText = content;
+          code.innerHTML = content;
           scope.active_beau = name ? name : false;
 
           highlight_code();
