@@ -19,4 +19,4 @@ ClearCodeApp.controller('ClearCodeFrameController', ['$scope', 'options', functi
       $scope.formatCode();
     });
   });
-});
+}]);
