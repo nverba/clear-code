@@ -97,7 +97,7 @@ header button {
   background: transparent;
 }
 
-header button:hover {
+header button:hover, header button:focus {
   color: #888;
   box-shadow: 1px 1px 5px rgba(183, 181, 189, 0.85);
   border-radius: 3px;
