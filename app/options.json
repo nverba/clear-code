@@ -99,9 +99,9 @@
           "type": "h3",
           "text": "Indentation"
         }, {
-          "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+          "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
         }, {
-          "id": "indent_level", "label": "Indent level", "default": 0, "type": "number"
+          "id": "indent_level", "label": "Indent level", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "id": "indent_with_tabs", "label": "Indent with tabs", "default": false, "type": "checkbox"
         }, {
@@ -121,7 +121,7 @@
         }, {
           "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
         }, {
-          "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "type": "number"
+          "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "type": "h3",
           "text": "JSLint"
@@ -141,7 +141,7 @@
             "text": ""
           }]
         }, {
-          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
+          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "type": "h3",
           "text": "Advanced"
@@ -167,7 +167,7 @@
       }, {
         "id": "indent_inner_html", "label": "Indent inner_html", "default": false, "type": "checkbox"
       }, {
-        "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+        "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
       }, {
         "type": "span",
         "content": [{
@@ -183,11 +183,11 @@
       }, {
         "id": "indent_scripts", "label": "Indent scripts", "type": "options", "default": "normal", "options": ["normal", "keep", "separate"]
       }, {
-        "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "type": "number"
+        "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
       }, {
         "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
       }, {
-        "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "type": "number"
+        "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
       }, {
         "id": "indent_handlebars", "label": "Indent handlebars", "default": false, "type": "checkbox"
       }]
@@ -199,7 +199,7 @@
       "label": "Options",
       "id": "css_options",
       "options": [{
-        "id": "indent_size", "label": "Indent size", "default": 4, "type": "number", "min": 1, "max": 8
+        "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
       }, {
         "type": "span",
         "content": [{
