@@ -8,21 +8,7 @@
       "label": "Options",
       "id": "theme_options",
       "options": [{
-        "id": "line_nums", "label": "Line Numbers", "default": false, "type": "checkbox"
-      }, {
-        "id": "margin_size", "label": "Margin size", "type": "options", "default": 100,
-        "options": [
-          0,
-          25,
-          50,
-          75,
-          100,
-          155,
-          180,
-          210,
-          250,
-          300
-        ]
+        "id": "line_nums", "label": "Use line numbers", "default": false, "type": "checkbox"
       }, {
         "id": "font_size", "label": "Font size", "type": "options", "default": 12,
         "options": [
@@ -42,6 +28,8 @@
           19,
           20
         ]
+      }, {
+        "id": "margin_size", "label": "Margin size", "type": "number", "default": 100, "model_options": { "debounce": 50 }
       }, {
         "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
         "options": [
@@ -99,34 +87,29 @@
           "type": "h3",
           "text": "Indentation"
         }, {
-          "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
-        }, {
-          "id": "indent_level", "label": "Indent level", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
-        }, {
           "id": "indent_with_tabs", "label": "Indent with tabs", "default": false, "type": "checkbox"
         }, {
-          "id": "keep_array_indentation", "label": "Keep array indentation", "default": false, "type": "checkbox"
+          "id": "keep_array_indentation", "label": "Preserve array indentation", "default": false, "type": "checkbox"
         }, {
-          "id": "keep_function_indentation", "label": "Keep function indentation", "default": false, "type": "checkbox"
+          "id": "keep_function_indentation", "label": "Preserve function indentation", "default": false, "type": "checkbox"
         }, {
-          "type": "span",
-          "content": [{
-            "text": "Indent code with custom character, defaults to a single space."
-          }]
+          "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
         }, {
-          "id": "indent_char", "label": "Indent character", "default": " "
+          "id": "indent_char", "label": "Indent character", "default": " ", "type": "text"
+        }, {
+          "id": "indent_level", "label": "Initial indentation level", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "type": "h3",
           "text": "Newlines"
         }, {
-          "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
+          "id": "preserve_newlines", "label": "Preserve line-breaks", "default": true, "type": "checkbox"
         }, {
-          "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
+          "id": "max_preserve_newlines", "label": "Number of line-breaks to be preserved in one chunk", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "type": "h3",
           "text": "JSLint"
         }, {
-          "id": "jslint_happy", "label": "Jslint happy", "default": false, "type": "checkbox"
+          "id": "jslint_happy", "label": "Enable jslint-stricter mode", "default": false, "type": "checkbox"
         }, {
           "type": "h3",
           "text": "Braces"
@@ -141,18 +124,18 @@
             "text": ""
           }]
         }, {
-          "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
+          "id": "wrap_line_length", "label": "Wrap lines at next opportunity after N characters", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
         }, {
           "type": "h3",
           "text": "Advanced"
         }, {
           "id": "space_before_conditional", "label": "Space before conditional", "default": true, "type": "checkbox"
         }, {
-          "id": "break_chained_methods", "label": "Break chained methods", "default": false, "type": "checkbox"
+          "id": "break_chained_methods", "label": "Break chained method calls across subsequent lines", "default": false, "type": "checkbox"
         }, {
           "id": "eval_code", "label": "Eval code", "default": false, "type": "checkbox"
         }, {
-          "id": "unescape_strings", "label": "Unescape strings", "default": false, "type": "checkbox"
+          "id": "unescape_strings", "label": "Decode printable characters encoded in xNN notation", "default": false, "type": "checkbox"
       }]
     }]
   }, {
@@ -165,48 +148,38 @@
         "type": "h3",
         "text": "Indentation"
       }, {
-        "id": "indent_inner_html", "label": "Indent inner_html", "default": false, "type": "checkbox"
+        "id": "indent_handlebars", "label": "Indent handlebars", "default": false, "type": "checkbox"
+      }, {
+        "id": "indent_inner_html", "label": "Indent inner HTML", "default": false, "type": "checkbox"
       }, {
         "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
       }, {
-        "type": "span",
-        "content": [{
-          "text": "Indent code with custom character, defaults to a single space."
-        }]
-      }, {
-        "id": "indent_char", "label": "Indent character", "default": " "
+        "id": "indent_char", "label": "Indent character", "default": " ", "type": "text"
       }, {
         "type": "h3",
         "text": "Braces"
       }, {
-        "id": "brace_style", "label": "Brace style", "type": "options", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
+        "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
       }, {
         "id": "indent_scripts", "label": "Indent scripts", "type": "options", "default": "normal", "options": ["normal", "keep", "separate"]
       }, {
+        "id": "brace_style", "label": "Brace style", "type": "options", "default": "collapse", "options": ["collapse", "expand", "end-expand"]
+      }, {
         "id": "wrap_line_length", "label": "Wrap line length", "default": 0, "model_options": { "debounce": 50 }, "type": "number"
       }, {
-        "id": "preserve_newlines", "label": "Preserve newlines", "default": true, "type": "checkbox"
-      }, {
-        "id": "max_preserve_newlines", "label": "Max preserve_newlines", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
-      }, {
-        "id": "indent_handlebars", "label": "Indent handlebars", "default": false, "type": "checkbox"
+        "id": "max_preserve_newlines", "label": "Max preserve newlines", "default": 10, "model_options": { "debounce": 50 }, "type": "number"
       }]
     }]
   }, {
     "label": "CSS Beautifier",
     "id": "css_beautifier",
     "categories": [{
-      "label": "Options",
+      "label": "Indentation",
       "id": "css_options",
       "options": [{
         "id": "indent_size", "label": "Indent size", "default": 4, "model_options": { "debounce": 50 }, "type": "number", "min": 1, "max": 8
       }, {
-        "type": "span",
-        "content": [{
-          "text": "Indent code with custom character, defaults to a single space."
-        }]
-      }, {
-        "id": "indent_char", "label": "Indent character", "default": " "
+        "id": "indent_char", "label": "Indent character", "default": " ", "type": "text"
       }]
     }]
   }]
