@@ -35,7 +35,7 @@ button.clear-code:hover {
 
 #clear-code-frame {
   position: fixed;
-  z-index: 9999;
+  z-index: 2147483647;
   top: 0px;
   left: 0px;
   width: 100%;
