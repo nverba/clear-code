@@ -6,30 +6,30 @@ div.clear-code-top-button, div.clear-code-bottom-button {
 }
 
 button.clear-code {
-  -webkit-box-sizing: border-box; box-sizing: border-box;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  -webkit-box-sizing: border-box; box-sizing: border-box  !important;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif  !important;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  display: block;
-  position:absolute;
+  display: block !important;
+  position:absolute !important;
   height: 30px;
-  padding: 0px 10px 0px 30px;
-  margin: 5px;
-  background-color: #E6E6E6;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  color: #7A7A7A;
-  border-radius: 2px;
-  border: 1px solid #C5C5C5;
-  opacity: 0.5;
+  padding: 0px 10px 0px 30px !important;
+  margin: 5px  !important;
+  background-color: #E6E6E6 !important;
+  text-decoration: none  !important;
+  background-repeat: no-repeat  !important;
+  background-position: 5px center  !important;
+  color: #7A7A7A  !important;
+  border-radius: 2px  !important;
+  border: 1px solid #C5C5C5  !important;
+  opacity: 0.5  !important;
   -webkit-transition:opacity 0.3s;
   transition:opacity 0.3s;
 }
 
 button.clear-code:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 

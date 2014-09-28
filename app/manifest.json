@@ -2,7 +2,7 @@
   "name": "Clear Code",
   "short_name": "Clear Code",
   "description": "Syntax highlighting and beautifiers for embedded code examples.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "manifest_version": 2,
   "browser_action": {
     "default_icon": {
