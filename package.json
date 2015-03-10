@@ -1,8 +1,16 @@
 {
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.8",
     "gulp-zip": "^2.0.2",
     "karma": "^0.12.21",
     "karma-mocha": "^0.1.9"
+  },
+  "dependencies": {
+    "angular": "^1.3.14",
+    "angular-chrome-options": "https://github.com/nverba/angular-chrome-options/archive/v0.3.1.tar.gz",
+    "google-code-prettify": "https://github.com/nverba/google-code-prettify/tarball/master",
+    "chrome-bootstrap": "^1.4.1",
+    "js-beautify": "^1.5.5"
   }
 }

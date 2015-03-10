@@ -1,1 +1,1 @@
-var ClearCodeApp = angular.module('ClearCodeApp', ['optionsService']);
+var ClearCodeApp = angular.module('ClearCodeApp', ['options']);
