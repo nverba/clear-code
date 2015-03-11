@@ -11,7 +11,6 @@
     "angular-chrome-options": "https://github.com/nverba/angular-chrome-options/archive/v0.3.1.tar.gz",
     "chrome-bootstrap": "^1.4.1",
     "google-code-prettify": "https://github.com/nverba/google-code-prettify/tarball/master",
-    "highlight.js": "^8.4.0",
     "js-beautify": "^1.5.5"
   }
 }
