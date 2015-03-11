@@ -1,38 +1,41 @@
-var css_link = document.getElementById('css_theme');
-var code     = document.getElementById('clear-code-code');
-var pre      = document.getElementById('clear-code-pre');
-var sample   = pre.innerHTML;
+(function () { 'use strict';
 
-// force css repaint after href updated, needed for browsing theme drop down with arrow keys.
-function goPrint() {
-  setTimeout(function () {
-    css_link.style.display = 'block';
-    prettyPrint();
-  }, 50);
-}
+  var css_link = document.getElementById('css_theme');
+  var code     = document.getElementById('clear-code-code');
+  var pre      = document.getElementById('clear-code-pre');
+  var sample   = pre.innerHTML;
 
-chrome.storage.local.get({ 'clearCodeOptions': { theme_options: { css_theme: 'default.css' }}}, function (response) {
+  // force css repaint after href updated, needed for browsing theme drop down with arrow keys.
+  function goPrint() {
+    setTimeout(function () {
+      css_link.style.display = 'block';
+      prettyPrint();
+    }, 50);
+  }
 
-  css_link.href = 'prettyprint/' + response.clearCodeOptions.theme_options.css_theme + '.css';
-  code.style['font-family'] = response.clearCodeOptions.theme_options.font_family;
-  code.style['font-size']   = response.clearCodeOptions.theme_options.font_size + 'px';
-  code.style['line-height'] = response.clearCodeOptions.theme_options.line_height + 'em';
-  pre.className = response.clearCodeOptions.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
-});
+  chrome.storage.local.get({ 'clearCodeOptions': { theme_options: { css_theme: 'default.css' }}}, function (response) {
 
-chrome.storage.onChanged.addListener(function(changes, namespace) {
-  if (namespace !== 'local' || !changes.clearCodeOptions ) { return; }
+    css_link.href             = 'prettyprint/' + response.clearCodeOptions.theme_options.css_theme + '.css';
+    code.style['font-family'] = response.clearCodeOptions.theme_options.font_family;
+    code.style['font-size']   = response.clearCodeOptions.theme_options.font_size + 'px';
+    code.style['line-height'] = response.clearCodeOptions.theme_options.line_height + 'em';
+    pre.className             = response.clearCodeOptions.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
+  });
 
-  pre.innerHTML = sample;
-  code = document.getElementById('clear-code-code');
+  chrome.storage.onChanged.addListener(function(changes, namespace) {
+    if (namespace !== 'local' || !changes.clearCodeOptions ) { return; }
 
-  css_link.href             = 'prettyprint/' + changes.clearCodeOptions.newValue.theme_options.css_theme + '.css';
-  code.style['font-family'] = changes.clearCodeOptions.newValue.theme_options.font_family;
-  code.style['font-size']   = changes.clearCodeOptions.newValue.theme_options.font_size + 'px';
-  code.style['line-height'] = changes.clearCodeOptions.newValue.theme_options.line_height + 'em';
-  pre.className             = changes.clearCodeOptions.newValue.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
+    pre.innerHTML = sample;
+    code = document.getElementById('clear-code-code');
+
+    css_link.href             = 'prettyprint/' + changes.clearCodeOptions.newValue.theme_options.css_theme + '.css';
+    code.style['font-family'] = changes.clearCodeOptions.newValue.theme_options.font_family;
+    code.style['font-size']   = changes.clearCodeOptions.newValue.theme_options.font_size + 'px';
+    code.style['line-height'] = changes.clearCodeOptions.newValue.theme_options.line_height + 'em';
+    pre.className             = changes.clearCodeOptions.newValue.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
+
+    goPrint();
+  });
 
   goPrint();
-});
-
-goPrint();
+})();

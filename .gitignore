@@ -1,4 +1,4 @@
 node_modules/
-app/scripts/
-app/libs/
+/notes.txt
+/app/libs/
 npm-debug.log
