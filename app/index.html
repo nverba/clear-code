@@ -32,24 +32,24 @@
     </style>
 
   </head>
-  <body ng-controller="ClearCodeFrameController" ng-style="bodyStyle">
+  <body ng-controller="ClearCodeFrameController as frame" ng-style="bodyStyle">
 
     <header id='clear-code-header'>
       <span id="clear-code-title">Clear Code</span>
 
       Beautifiers:
-      <button ng-click="formatCode('js')" ng-class="{ active: active_beau === 'js'}">JS</button>
-      <button ng-click="formatCode('html')" ng-class="{ active: active_beau === 'html'}">HTML</button>
-      <button ng-click="formatCode('css')" ng-class="{ active: active_beau === 'css'}">CSS</button>
-      <button ng-click="formatCode()" style="margin-right: {{ menu_margin }}px"><i class="icon-ccw"></i></button>
+      <button ng-click="formatCode('js')" ng-class="{ active: frame.active_beau === 'js'}">JS</button>
+      <button ng-click="formatCode('html')" ng-class="{ active: frame.active_beau === 'html'}">HTML</button>
+      <button ng-click="formatCode('css')" ng-class="{ active: frame.active_beau === 'css'}">CSS</button>
+      <button ng-click="formatCode()" style="margin-right: {{ frame.menu_margin }}px"><i class="icon-ccw"></i></button>
 
       <button ng-click="closeFrame()" id='close'>
         <i class="icon-close"></i>
       </button>
     </header>
 
-    <div id="clear-code-container" style="left: {{ margins }}px; right: {{ margins }}px">
-      <pre id='clear-code-pre' format-code><code id='clear-code-code'></code></pre>
+    <div id="clear-code-container" style="left: {{ frame.margins }}px; right: {{ frame.margins }}px">
+      <pre id='clear-code-pre' format-code="frame.formatCode()"><code id='clear-code-code'></code></pre>
     </div>
 
     <script src="libs/angular/angular.js"></script>
