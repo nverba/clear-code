@@ -40,7 +40,7 @@
           2
         ]
       }, {
-        "id": "margin_size", "label": "Margin size", "type": "number", "default": 100, "debounce": 50
+        "id": "margin_size", "label": "Page Margin", "type": "number", "default": 100, "debounce": 50
       }, {
         "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
         "options": [
