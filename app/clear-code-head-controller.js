@@ -1,11 +1,17 @@
-ClearCodeApp.controller('ClearCodeHeadController', ['$scope', 'options', function ClearCodeHeadController($scope, options) {
+(function () { 'use strict';
 
-  $scope.css = {};
+  angular.module('ClearCodeApp').controller('ClearCodeHeadController', ['$scope', 'options', ClearCodeHeadControllerFn]);
 
-  options.ready.then(function () {
+  function ClearCodeHeadControllerFn($scope, options) {
 
-    $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
-      $scope.css.highlighter = chrome.extension.getURL( 'prettyprint/' + options.categories.theme_options.css_theme + '.css' );
+    $scope.css = {};
+
+    options.ready.then(function () {
+
+      $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
+        $scope.css.highlighter = chrome.extension.getURL( 'prettyprint/' + options.categories.theme_options.css_theme + '.css' );
+      });
     });
-  });
-}]);
+  }
+
+})();

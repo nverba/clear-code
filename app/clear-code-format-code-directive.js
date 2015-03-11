@@ -1,52 +1,58 @@
-ClearCodeApp.directive('formatCode', ['options', '$timeout', function (options, $timeout) {
-  'use strict';
+(function () { 'use strict';
 
-  return {
+  angular.module('ClearCodeApp').directive('formatCode', ['options', '$timeout', formatCodeFn]);
 
-    restrict: 'A',
-    link: function (scope, elem, attrs) {
+  function formatCodeFn(options, $timeout) {
 
-      var element = elem[0],
-          pre     = document.getElementById('clear-code-pre'),
-          code    = document.getElementById('clear-code-code'),
-          content = '',
-          saved_state = pre.innerHTML;
+    return {
 
-      function highlight_code() {
+      restrict: 'A',
+      link: function (scope, elem, attrs) {
 
-        pre.className = scope.active_beau ? 'prettyprint lang-' + scope.active_beau : "prettyprint";
-        pre.className += options.categories.theme_options.line_nums ? ' linenums ' : '';
-        prettyPrint();
-      }
+        var element = elem[0],
+            pre     = document.getElementById('clear-code-pre'),
+            code    = document.getElementById('clear-code-code'),
+            content = '',
+            saved_state = pre.innerHTML;
 
-      scope.formatCode = function format_code(name) {
-        options.ready.then(function () {
+        function highlight_code() {
 
-          pre.innerHTML  = saved_state;
-          code = document.getElementById('clear-code-code');
-          code.style['font-family'] = options.categories.theme_options.font_family;
-          code.style['font-size']   = options.categories.theme_options.font_size + 'px';
-          code.style['line-height'] = options.categories.theme_options.line_height + 'em';
-          code.textContent = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
-          scope.active_beau = name ? name : false;
-
-          highlight_code();
-
-        });
-      };
-
-      chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
-
-        if (request.openCode) {
-          content = JSON.parse(request.openCode);
-          scope.formatCode();
+          pre.className = scope.active_beau ? 'prettyprint lang-' + scope.active_beau : "prettyprint";
+          pre.className += options.categories.theme_options.line_nums ? ' linenums ' : '';
+          prettyPrint();
         }
-      });
 
-      $timeout(function () {
-        chrome.runtime.sendMessage({ tabUnlock: true });
-      });
+        scope.formatCode = function format_code(name) {
+          options.ready.then(function () {
 
-    }
-  };
-}]);
+            pre.innerHTML  = saved_state;
+            code = document.getElementById('clear-code-code');
+            code.style['font-family'] = options.categories.theme_options.font_family;
+            code.style['font-size']   = options.categories.theme_options.font_size + 'px';
+            code.style['line-height'] = options.categories.theme_options.line_height + 'em';
+            code.textContent = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
+            scope.active_beau = name ? name : false;
+
+            highlight_code();
+
+          });
+        };
+
+        chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
+
+          if (request.openCode) {
+            content = JSON.parse(request.openCode);
+            scope.formatCode();
+          }
+        });
+
+        $timeout(function () {
+          chrome.runtime.sendMessage({ tabUnlock: true });
+        });
+
+      }
+    };
+  }
+
+
+})();

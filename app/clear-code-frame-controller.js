@@ -1,22 +1,28 @@
-ClearCodeApp.controller('ClearCodeFrameController', ['$scope', 'options', function ClearCodeFrameController($scope, options) {
+(function () { 'use strict';
 
-  $scope.closeFrame = function () {
-    chrome.runtime.sendMessage({ tabMessage: { frameDisplay: 'none' }});
-  };
+  angular.module('ClearCodeApp').controller('ClearCodeFrameController', ['$scope', 'options', ClearCodeFrameControllerFn]);
 
-  var container = document.getElementById('clear-code-container');
+  function ClearCodeFrameControllerFn($scope, options) {
 
-  options.ready.then(function () {
-    $scope.margins     = options.categories.theme_options.margin_size;
-    $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
+    $scope.closeFrame = function () {
+      chrome.runtime.sendMessage({ tabMessage: { frameDisplay: 'none' }});
+    };
 
-    $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
-      if (angular.equals(newValue, oldValue)) { return; }
+    var container = document.getElementById('clear-code-container');
 
+    options.ready.then(function () {
       $scope.margins     = options.categories.theme_options.margin_size;
       $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
 
-      $scope.formatCode();
+      $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
+        if (angular.equals(newValue, oldValue)) { return; }
+
+        $scope.margins     = options.categories.theme_options.margin_size;
+        $scope.menu_margin = $scope.margins < 40 ? 0 : $scope.margins - 40;
+
+        $scope.formatCode();
+      });
     });
-  });
-}]);
+  }
+
+})();
