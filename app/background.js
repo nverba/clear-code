@@ -49,7 +49,7 @@ function handleMessage(request, sender, sendResponse) {
       file: 'clear-code.css'
     });
     chrome.tabs.executeScript({
-      file: 'clear-code-injected-frame.js'
+      file: 'viewer.js'
     });
     sendResponse({ response: "success" });
   }
