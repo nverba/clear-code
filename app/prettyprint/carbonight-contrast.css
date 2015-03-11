@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Carbonight Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #ffffff;
+}
+pre.prettyprint .kwd {
+  color: #C4C4C4;
+}
+pre.prettyprint .com {
+  color: #423F3D;
+}
+pre.prettyprint .typ {
+  color: #8C8C8C;
+}
+pre.prettyprint .lit {
+  color: #ffffff;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #C4C4C4;
+}
+pre.prettyprint .atn {
+  color: #8C8C8C;
+}
+pre.prettyprint .atv {
+  color: #ffffff;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #ffffff;
+}
+pre.prettyprint .fun {
+  color: #C4C4C4;
+}
+
+
+/* ------- END OF THEME ------- */
+

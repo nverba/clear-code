@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * FreshCut Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #F8F8F2;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #F8F8F2;
+}
+
+pre.prettyprint .str {
+  color: #e9ee00;
+}
+pre.prettyprint .kwd {
+  color: #4ECDC4;
+}
+pre.prettyprint .com {
+  color: #737b84;
+}
+pre.prettyprint .typ {
+  color: #00A8C6;
+}
+pre.prettyprint .lit {
+  color: #AEE239;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #F8F8F2;
+}
+pre.prettyprint .tag {
+  color: #4ECDC4;
+}
+pre.prettyprint .atn {
+  color: #00A8C6;
+}
+pre.prettyprint .atv {
+  color: #AEE239;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #e9ee00;
+}
+pre.prettyprint .fun {
+  color: #4ECDC4;
+}
+
+
+/* ------- END OF THEME ------- */
+

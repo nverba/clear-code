@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Tron Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #07090b;
+  padding: 2em;
+  font-size:.7em;
+  color: #aec2e0;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #aec2e0;
+}
+
+pre.prettyprint .str {
+  color: #6ee2ff;
+}
+pre.prettyprint .kwd {
+  color: #267fb5;
+}
+pre.prettyprint .com {
+  color: #324357;
+}
+pre.prettyprint .typ {
+  color: #ffffff;
+}
+pre.prettyprint .lit {
+  color: #ffffff;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #aec2e0;
+}
+pre.prettyprint .tag {
+  color: #267fb5;
+}
+pre.prettyprint .atn {
+  color: #ffffff;
+}
+pre.prettyprint .atv {
+  color: #ffffff;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #6ee2ff;
+}
+pre.prettyprint .fun {
+  color: #267fb5;
+}
+
+
+/* ------- END OF THEME ------- */
+

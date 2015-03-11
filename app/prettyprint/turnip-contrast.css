@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Turnip Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #080809;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDE0CE;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDE0CE;
+}
+
+pre.prettyprint .str {
+  color: #E8DA5E;
+}
+pre.prettyprint .kwd {
+  color: #92B55F;
+}
+pre.prettyprint .com {
+  color: #7A7267;
+}
+pre.prettyprint .typ {
+  color: #487D76;
+}
+pre.prettyprint .lit {
+  color: #E8DA5E;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDE0CE;
+}
+pre.prettyprint .tag {
+  color: #92B55F;
+}
+pre.prettyprint .atn {
+  color: #487D76;
+}
+pre.prettyprint .atv {
+  color: #E8DA5E;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #E8DA5E;
+}
+pre.prettyprint .fun {
+  color: #92B55F;
+}
+
+
+/* ------- END OF THEME ------- */
+

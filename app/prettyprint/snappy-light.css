@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Snappy Light
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #ffffff;
+  padding: 2em;
+  font-size:.7em;
+  color: #555555;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #555555;
+}
+
+pre.prettyprint .str {
+  color: #4ea1df;
+}
+pre.prettyprint .kwd {
+  color: #4ea1df;
+}
+pre.prettyprint .com {
+  color: #bbbbbb;
+}
+pre.prettyprint .typ {
+  color: #f66153;
+}
+pre.prettyprint .lit {
+  color: #808dd3;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #555555;
+}
+pre.prettyprint .tag {
+  color: #4ea1df;
+}
+pre.prettyprint .atn {
+  color: #f66153;
+}
+pre.prettyprint .atv {
+  color: #808dd3;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #4ea1df;
+}
+pre.prettyprint .fun {
+  color: #4ea1df;
+}
+
+
+/* ------- END OF THEME ------- */
+

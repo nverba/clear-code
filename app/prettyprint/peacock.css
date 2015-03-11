@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Peacock
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2b2a27;
+  padding: 2em;
+  font-size:.7em;
+  color: #ede0ce;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ede0ce;
+}
+
+pre.prettyprint .str {
+  color: #bcd42a;
+}
+pre.prettyprint .kwd {
+  color: #26a6a6;
+}
+pre.prettyprint .com {
+  color: #7a7267;
+}
+pre.prettyprint .typ {
+  color: #ff5d38;
+}
+pre.prettyprint .lit {
+  color: #bcd42a;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ede0ce;
+}
+pre.prettyprint .tag {
+  color: #26a6a6;
+}
+pre.prettyprint .atn {
+  color: #ff5d38;
+}
+pre.prettyprint .atv {
+  color: #bcd42a;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #bcd42a;
+}
+pre.prettyprint .fun {
+  color: #26a6a6;
+}
+
+
+/* ------- END OF THEME ------- */
+

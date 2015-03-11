@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Yule
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2B2A27;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDE0CE;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDE0CE;
+}
+
+pre.prettyprint .str {
+  color: #EBB626;
+}
+pre.prettyprint .kwd {
+  color: #39B81F;
+}
+pre.prettyprint .com {
+  color: #7A7267;
+}
+pre.prettyprint .typ {
+  color: #D63131;
+}
+pre.prettyprint .lit {
+  color: #EBB626;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDE0CE;
+}
+pre.prettyprint .tag {
+  color: #39B81F;
+}
+pre.prettyprint .atn {
+  color: #D63131;
+}
+pre.prettyprint .atv {
+  color: #EBB626;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #EBB626;
+}
+pre.prettyprint .fun {
+  color: #39B81F;
+}
+
+
+/* ------- END OF THEME ------- */
+

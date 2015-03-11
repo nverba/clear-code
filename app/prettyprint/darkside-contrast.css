@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Darkside Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #BABABA;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #BABABA;
+}
+
+pre.prettyprint .str {
+  color: #F2D42C;
+}
+pre.prettyprint .kwd {
+  color: #1CC3E8;
+}
+pre.prettyprint .com {
+  color: #494B4D;
+}
+pre.prettyprint .typ {
+  color: #E8341C;
+}
+pre.prettyprint .lit {
+  color: #68C244;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #BABABA;
+}
+pre.prettyprint .tag {
+  color: #1CC3E8;
+}
+pre.prettyprint .atn {
+  color: #E8341C;
+}
+pre.prettyprint .atv {
+  color: #68C244;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F2D42C;
+}
+pre.prettyprint .fun {
+  color: #1CC3E8;
+}
+
+
+/* ------- END OF THEME ------- */
+

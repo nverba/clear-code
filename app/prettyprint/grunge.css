@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Grunge
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #31332C;
+  padding: 2em;
+  font-size:.7em;
+  color: #F8F8F2;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #F8F8F2;
+}
+
+pre.prettyprint .str {
+  color: #D1F2A5;
+}
+pre.prettyprint .kwd {
+  color: #D1F2A5;
+}
+pre.prettyprint .com {
+  color: #5C634F;
+}
+pre.prettyprint .typ {
+  color: #F56991;
+}
+pre.prettyprint .lit {
+  color: #FFC48C;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #F8F8F2;
+}
+pre.prettyprint .tag {
+  color: #D1F2A5;
+}
+pre.prettyprint .atn {
+  color: #F56991;
+}
+pre.prettyprint .atv {
+  color: #FFC48C;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #D1F2A5;
+}
+pre.prettyprint .fun {
+  color: #D1F2A5;
+}
+
+
+/* ------- END OF THEME ------- */
+

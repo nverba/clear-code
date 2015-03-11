@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Crisp
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #221a22;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #fc9a0f;
+}
+pre.prettyprint .kwd {
+  color: #cba0cd;
+}
+pre.prettyprint .com {
+  color: #574457;
+}
+pre.prettyprint .typ {
+  color: #765478;
+}
+pre.prettyprint .lit {
+  color: #FC6A0F;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #cba0cd;
+}
+pre.prettyprint .atn {
+  color: #765478;
+}
+pre.prettyprint .atv {
+  color: #FC6A0F;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #fc9a0f;
+}
+pre.prettyprint .fun {
+  color: #cba0cd;
+}
+
+
+/* ------- END OF THEME ------- */
+

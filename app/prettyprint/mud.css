@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Mud
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #403635;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #b5db99;
+}
+pre.prettyprint .kwd {
+  color: #e9c865;
+}
+pre.prettyprint .com {
+  color: #c3b8b7;
+}
+pre.prettyprint .typ {
+  color: #FF9787;
+}
+pre.prettyprint .lit {
+  color: #b5db99;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #e9c865;
+}
+pre.prettyprint .atn {
+  color: #FF9787;
+}
+pre.prettyprint .atv {
+  color: #b5db99;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #b5db99;
+}
+pre.prettyprint .fun {
+  color: #e9c865;
+}
+
+
+/* ------- END OF THEME ------- */
+

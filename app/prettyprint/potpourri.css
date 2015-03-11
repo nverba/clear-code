@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Potpourri
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2E2B2C;
+  padding: 2em;
+  font-size:.7em;
+  color: #F8F8F2;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #F8F8F2;
+}
+
+pre.prettyprint .str {
+  color: #B866FA;
+}
+pre.prettyprint .kwd {
+  color: #C491C4;
+}
+pre.prettyprint .com {
+  color: #696363;
+}
+pre.prettyprint .typ {
+  color: #ED1153;
+}
+pre.prettyprint .lit {
+  color: #B866FA;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #F8F8F2;
+}
+pre.prettyprint .tag {
+  color: #C491C4;
+}
+pre.prettyprint .atn {
+  color: #ED1153;
+}
+pre.prettyprint .atv {
+  color: #B866FA;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #B866FA;
+}
+pre.prettyprint .fun {
+  color: #C491C4;
+}
+
+
+/* ------- END OF THEME ------- */
+

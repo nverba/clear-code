@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Azure
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #181D26;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #64aeb3;
+}
+pre.prettyprint .kwd {
+  color: #6AB0A3;
+}
+pre.prettyprint .com {
+  color: #414d62;
+}
+pre.prettyprint .typ {
+  color: #52708b;
+}
+pre.prettyprint .lit {
+  color: #508aaa;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #6AB0A3;
+}
+pre.prettyprint .atn {
+  color: #52708b;
+}
+pre.prettyprint .atv {
+  color: #508aaa;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #64aeb3;
+}
+pre.prettyprint .fun {
+  color: #6AB0A3;
+}
+
+
+/* ------- END OF THEME ------- */
+

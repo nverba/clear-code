@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Mellow Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #0b0a09;
+  padding: 2em;
+  font-size:.7em;
+  color: #F8F8F2;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #F8F8F2;
+}
+
+pre.prettyprint .str {
+  color: #F8BB39;
+}
+pre.prettyprint .kwd {
+  color: #F2BC79;
+}
+pre.prettyprint .com {
+  color: #7A7267;
+}
+pre.prettyprint .typ {
+  color: #1F8181;
+}
+pre.prettyprint .lit {
+  color: #F28972;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #F8F8F2;
+}
+pre.prettyprint .tag {
+  color: #F2BC79;
+}
+pre.prettyprint .atn {
+  color: #1F8181;
+}
+pre.prettyprint .atv {
+  color: #F28972;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F8BB39;
+}
+pre.prettyprint .fun {
+  color: #F2BC79;
+}
+
+
+/* ------- END OF THEME ------- */
+

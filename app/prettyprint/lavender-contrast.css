@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Lavender Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #080709;
+  padding: 2em;
+  font-size:.7em;
+  color: #E0CEED;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #E0CEED;
+}
+
+pre.prettyprint .str {
+  color: #F5B0EF;
+}
+pre.prettyprint .kwd {
+  color: #A29DFA;
+}
+pre.prettyprint .com {
+  color: #614e6e;
+}
+pre.prettyprint .typ {
+  color: #B657FF;
+}
+pre.prettyprint .lit {
+  color: #F5B0EF;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #E0CEED;
+}
+pre.prettyprint .tag {
+  color: #A29DFA;
+}
+pre.prettyprint .atn {
+  color: #B657FF;
+}
+pre.prettyprint .atv {
+  color: #F5B0EF;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F5B0EF;
+}
+pre.prettyprint .fun {
+  color: #A29DFA;
+}
+
+
+/* ------- END OF THEME ------- */
+

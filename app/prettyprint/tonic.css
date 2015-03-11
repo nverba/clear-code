@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Tonic
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2a2f31;
+  padding: 2em;
+  font-size:.7em;
+  color: #eeeeee;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #eeeeee;
+}
+
+pre.prettyprint .str {
+  color: #B8CD44;
+}
+pre.prettyprint .kwd {
+  color: #75A1A4;
+}
+pre.prettyprint .com {
+  color: #4a5356;
+}
+pre.prettyprint .typ {
+  color: #B8CD44;
+}
+pre.prettyprint .lit {
+  color: #FD9F59;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #eeeeee;
+}
+pre.prettyprint .tag {
+  color: #75A1A4;
+}
+pre.prettyprint .atn {
+  color: #B8CD44;
+}
+pre.prettyprint .atv {
+  color: #FD9F59;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #B8CD44;
+}
+pre.prettyprint .fun {
+  color: #75A1A4;
+}
+
+
+/* ------- END OF THEME ------- */
+

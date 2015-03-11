@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Otakon
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #171417;
+  padding: 2em;
+  font-size:.7em;
+  color: #f9f3f9;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #f9f3f9;
+}
+
+pre.prettyprint .str {
+  color: #9eb2d9;
+}
+pre.prettyprint .kwd {
+  color: #B1A6CA;
+}
+pre.prettyprint .com {
+  color: #515166;
+}
+pre.prettyprint .typ {
+  color: #F6E6EB;
+}
+pre.prettyprint .lit {
+  color: #E484B2;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #f9f3f9;
+}
+pre.prettyprint .tag {
+  color: #B1A6CA;
+}
+pre.prettyprint .atn {
+  color: #F6E6EB;
+}
+pre.prettyprint .atv {
+  color: #E484B2;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #9eb2d9;
+}
+pre.prettyprint .fun {
+  color: #B1A6CA;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Pastel
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #222222;
+  padding: 2em;
+  font-size:.7em;
+  color: #eeeeee;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #eeeeee;
+}
+
+pre.prettyprint .str {
+  color: #C56C6C;
+}
+pre.prettyprint .kwd {
+  color: #9474a9;
+}
+pre.prettyprint .com {
+  color: #444444;
+}
+pre.prettyprint .typ {
+  color: #04C4A5;
+}
+pre.prettyprint .lit {
+  color: #C56C6C;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #eeeeee;
+}
+pre.prettyprint .tag {
+  color: #9474a9;
+}
+pre.prettyprint .atn {
+  color: #04C4A5;
+}
+pre.prettyprint .atv {
+  color: #C56C6C;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #C56C6C;
+}
+pre.prettyprint .fun {
+  color: #9474a9;
+}
+
+
+/* ------- END OF THEME ------- */
+

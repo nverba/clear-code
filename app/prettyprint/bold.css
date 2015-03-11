@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Bold
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2a2626;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #F7A21B;
+}
+pre.prettyprint .kwd {
+  color: #3D8E91;
+}
+pre.prettyprint .com {
+  color: #534b4b;
+}
+pre.prettyprint .typ {
+  color: #F0624B;
+}
+pre.prettyprint .lit {
+  color: #B4B7AD;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #3D8E91;
+}
+pre.prettyprint .atn {
+  color: #F0624B;
+}
+pre.prettyprint .atv {
+  color: #B4B7AD;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F7A21B;
+}
+pre.prettyprint .fun {
+  color: #3D8E91;
+}
+
+
+/* ------- END OF THEME ------- */
+

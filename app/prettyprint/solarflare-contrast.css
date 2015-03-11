@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Solarflare Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #e3e2e0;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #e3e2e0;
+}
+
+pre.prettyprint .str {
+  color: #EDE574;
+}
+pre.prettyprint .kwd {
+  color: #FC913A;
+}
+pre.prettyprint .com {
+  color: #777777;
+}
+pre.prettyprint .typ {
+  color: #FF4E50;
+}
+pre.prettyprint .lit {
+  color: #EDE574;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #e3e2e0;
+}
+pre.prettyprint .tag {
+  color: #FC913A;
+}
+pre.prettyprint .atn {
+  color: #FF4E50;
+}
+pre.prettyprint .atv {
+  color: #EDE574;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #EDE574;
+}
+pre.prettyprint .fun {
+  color: #FC913A;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Peel
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #23201c;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDEBE6;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDEBE6;
+}
+
+pre.prettyprint .str {
+  color: #f4d370;
+}
+pre.prettyprint .kwd {
+  color: #94C7B6;
+}
+pre.prettyprint .com {
+  color: #585146;
+}
+pre.prettyprint .typ {
+  color: #D3643B;
+}
+pre.prettyprint .lit {
+  color: #D6E1C7;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDEBE6;
+}
+pre.prettyprint .tag {
+  color: #94C7B6;
+}
+pre.prettyprint .atn {
+  color: #D3643B;
+}
+pre.prettyprint .atv {
+  color: #D6E1C7;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #f4d370;
+}
+pre.prettyprint .fun {
+  color: #94C7B6;
+}
+
+
+/* ------- END OF THEME ------- */
+

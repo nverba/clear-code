@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Piggy
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #1c1618;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDEBE6;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDEBE6;
+}
+
+pre.prettyprint .str {
+  color: #FF453E;
+}
+pre.prettyprint .kwd {
+  color: #F52E62;
+}
+pre.prettyprint .com {
+  color: #3f3236;
+}
+pre.prettyprint .typ {
+  color: #FD6A5D;
+}
+pre.prettyprint .lit {
+  color: #FF5D80;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDEBE6;
+}
+pre.prettyprint .tag {
+  color: #F52E62;
+}
+pre.prettyprint .atn {
+  color: #FD6A5D;
+}
+pre.prettyprint .atv {
+  color: #FF5D80;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #FF453E;
+}
+pre.prettyprint .fun {
+  color: #F52E62;
+}
+
+
+/* ------- END OF THEME ------- */
+

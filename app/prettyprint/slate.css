@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Slate
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #19191f;
+  padding: 2em;
+  font-size:.7em;
+  color: #ebebf4;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ebebf4;
+}
+
+pre.prettyprint .str {
+  color: #9eb2d9;
+}
+pre.prettyprint .kwd {
+  color: #566981;
+}
+pre.prettyprint .com {
+  color: #515166;
+}
+pre.prettyprint .typ {
+  color: #89A7B1;
+}
+pre.prettyprint .lit {
+  color: #CBDAD5;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ebebf4;
+}
+pre.prettyprint .tag {
+  color: #566981;
+}
+pre.prettyprint .atn {
+  color: #89A7B1;
+}
+pre.prettyprint .atv {
+  color: #CBDAD5;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #9eb2d9;
+}
+pre.prettyprint .fun {
+  color: #566981;
+}
+
+
+/* ------- END OF THEME ------- */
+

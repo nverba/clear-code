@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Zacks Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #f0f0f0;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #f0f0f0;
+}
+
+pre.prettyprint .str {
+  color: #bcd42a;
+}
+pre.prettyprint .kwd {
+  color: #9c7ddb;
+}
+pre.prettyprint .com {
+  color: #777777;
+}
+pre.prettyprint .typ {
+  color: #ff6a38;
+}
+pre.prettyprint .lit {
+  color: #bcd42a;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #f0f0f0;
+}
+pre.prettyprint .tag {
+  color: #9c7ddb;
+}
+pre.prettyprint .atn {
+  color: #ff6a38;
+}
+pre.prettyprint .atv {
+  color: #bcd42a;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #bcd42a;
+}
+pre.prettyprint .fun {
+  color: #9c7ddb;
+}
+
+
+/* ------- END OF THEME ------- */
+

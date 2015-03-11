@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Heroku
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #1b1b24;
+  padding: 2em;
+  font-size:.7em;
+  color: #c8c7d5;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #c8c7d5;
+}
+
+pre.prettyprint .str {
+  color: #a6fa62;
+}
+pre.prettyprint .kwd {
+  color: #585480;
+}
+pre.prettyprint .com {
+  color: #505067;
+}
+pre.prettyprint .typ {
+  color: #7873ae;
+}
+pre.prettyprint .lit {
+  color: #ffffff;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #c8c7d5;
+}
+pre.prettyprint .tag {
+  color: #585480;
+}
+pre.prettyprint .atn {
+  color: #7873ae;
+}
+pre.prettyprint .atv {
+  color: #ffffff;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #a6fa62;
+}
+pre.prettyprint .fun {
+  color: #585480;
+}
+
+
+/* ------- END OF THEME ------- */
+

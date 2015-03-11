@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Patriot Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #0d0e0f;
+  padding: 2em;
+  font-size:.7em;
+  color: #CAD9E3;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #CAD9E3;
+}
+
+pre.prettyprint .str {
+  color: #3790DE;
+}
+pre.prettyprint .kwd {
+  color: #DE333C;
+}
+pre.prettyprint .com {
+  color: #515E66;
+}
+pre.prettyprint .typ {
+  color: #2E6FD9;
+}
+pre.prettyprint .lit {
+  color: #ffffff;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #CAD9E3;
+}
+pre.prettyprint .tag {
+  color: #DE333C;
+}
+pre.prettyprint .atn {
+  color: #2E6FD9;
+}
+pre.prettyprint .atv {
+  color: #ffffff;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #3790DE;
+}
+pre.prettyprint .fun {
+  color: #DE333C;
+}
+
+
+/* ------- END OF THEME ------- */
+

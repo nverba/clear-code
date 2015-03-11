@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Super
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #15191D;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #F7A21B;
+}
+pre.prettyprint .kwd {
+  color: #5d67ad;
+}
+pre.prettyprint .com {
+  color: #465360;
+}
+pre.prettyprint .typ {
+  color: #D60257;
+}
+pre.prettyprint .lit {
+  color: #E45635;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #5d67ad;
+}
+pre.prettyprint .atn {
+  color: #D60257;
+}
+pre.prettyprint .atv {
+  color: #E45635;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F7A21B;
+}
+pre.prettyprint .fun {
+  color: #5d67ad;
+}
+
+
+/* ------- END OF THEME ------- */
+

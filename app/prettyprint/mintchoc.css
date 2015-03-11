@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Mintchoc
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2b221c;
+  padding: 2em;
+  font-size:.7em;
+  color: #BABABA;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #BABABA;
+}
+
+pre.prettyprint .str {
+  color: #00E08C;
+}
+pre.prettyprint .kwd {
+  color: #9D8262;
+}
+pre.prettyprint .com {
+  color: #564439;
+}
+pre.prettyprint .typ {
+  color: #008D62;
+}
+pre.prettyprint .lit {
+  color: #00E08C;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #BABABA;
+}
+pre.prettyprint .tag {
+  color: #9D8262;
+}
+pre.prettyprint .atn {
+  color: #008D62;
+}
+pre.prettyprint .atv {
+  color: #00E08C;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #00E08C;
+}
+pre.prettyprint .fun {
+  color: #9D8262;
+}
+
+
+/* ------- END OF THEME ------- */
+

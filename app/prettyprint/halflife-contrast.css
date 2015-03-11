@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Halflife Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #cccccc;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #cccccc;
+}
+
+pre.prettyprint .str {
+  color: #F9D423;
+}
+pre.prettyprint .kwd {
+  color: #FC913A;
+}
+pre.prettyprint .com {
+  color: #555555;
+}
+pre.prettyprint .typ {
+  color: #7D8991;
+}
+pre.prettyprint .lit {
+  color: #F9D423;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #cccccc;
+}
+pre.prettyprint .tag {
+  color: #FC913A;
+}
+pre.prettyprint .atn {
+  color: #7D8991;
+}
+pre.prettyprint .atv {
+  color: #F9D423;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F9D423;
+}
+pre.prettyprint .fun {
+  color: #FC913A;
+}
+
+
+/* ------- END OF THEME ------- */
+

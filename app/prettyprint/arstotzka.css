@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Arstotzka
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #211f1e;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDEBE6;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDEBE6;
+}
+
+pre.prettyprint .str {
+  color: #a5e3d0;
+}
+pre.prettyprint .kwd {
+  color: #A2A797;
+}
+pre.prettyprint .com {
+  color: #3f3a36;
+}
+pre.prettyprint .typ {
+  color: #516B6B;
+}
+pre.prettyprint .lit {
+  color: #70807B;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDEBE6;
+}
+pre.prettyprint .tag {
+  color: #A2A797;
+}
+pre.prettyprint .atn {
+  color: #516B6B;
+}
+pre.prettyprint .atv {
+  color: #70807B;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #a5e3d0;
+}
+pre.prettyprint .fun {
+  color: #A2A797;
+}
+
+
+/* ------- END OF THEME ------- */
+

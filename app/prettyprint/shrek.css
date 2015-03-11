@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Shrek
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #222222;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #81e911;
+}
+pre.prettyprint .kwd {
+  color: #B2DE62;
+}
+pre.prettyprint .com {
+  color: #555555;
+}
+pre.prettyprint .typ {
+  color: #857a5e;
+}
+pre.prettyprint .lit {
+  color: #F0F2EB;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #B2DE62;
+}
+pre.prettyprint .atn {
+  color: #857a5e;
+}
+pre.prettyprint .atv {
+  color: #F0F2EB;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #81e911;
+}
+pre.prettyprint .fun {
+  color: #B2DE62;
+}
+
+
+/* ------- END OF THEME ------- */
+

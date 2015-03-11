@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Snappy Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #0c0c0c;
+  padding: 2em;
+  font-size:.7em;
+  color: #e3e2e0;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #e3e2e0;
+}
+
+pre.prettyprint .str {
+  color: #4ea1df;
+}
+pre.prettyprint .kwd {
+  color: #4ea1df;
+}
+pre.prettyprint .com {
+  color: #696969;
+}
+pre.prettyprint .typ {
+  color: #f66153;
+}
+pre.prettyprint .lit {
+  color: #808dd3;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #e3e2e0;
+}
+pre.prettyprint .tag {
+  color: #4ea1df;
+}
+pre.prettyprint .atn {
+  color: #f66153;
+}
+pre.prettyprint .atv {
+  color: #808dd3;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #4ea1df;
+}
+pre.prettyprint .fun {
+  color: #4ea1df;
+}
+
+
+/* ------- END OF THEME ------- */
+

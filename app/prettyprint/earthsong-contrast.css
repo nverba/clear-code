@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Earthsong Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #12100f;
+  padding: 2em;
+  font-size:.7em;
+  color: #EBD1B7;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EBD1B7;
+}
+
+pre.prettyprint .str {
+  color: #F8BB39;
+}
+pre.prettyprint .kwd {
+  color: #95CC5E;
+}
+pre.prettyprint .com {
+  color: #7A7267;
+}
+pre.prettyprint .typ {
+  color: #DB784D;
+}
+pre.prettyprint .lit {
+  color: #60A365;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EBD1B7;
+}
+pre.prettyprint .tag {
+  color: #95CC5E;
+}
+pre.prettyprint .atn {
+  color: #DB784D;
+}
+pre.prettyprint .atv {
+  color: #60A365;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #F8BB39;
+}
+pre.prettyprint .fun {
+  color: #95CC5E;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -5,7 +5,7 @@ ClearCodeApp.controller('ClearCodeHeadController', ['$scope', 'options', functio
   options.ready.then(function () {
 
     $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
-      $scope.css.highlighter = chrome.extension.getURL( 'highlight/styles/' + options.categories.theme_options.css_theme + '.css' );
+      $scope.css.highlighter = chrome.extension.getURL( 'prettyprint/' + options.categories.theme_options.css_theme + '.css' );
     });
   });
 }]);

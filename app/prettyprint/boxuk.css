@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Box UK
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #ffffff;
+  padding: 2em;
+  font-size:.7em;
+  color: #414f5c;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #414f5c;
+}
+
+pre.prettyprint .str {
+  color: #15b8ae;
+}
+pre.prettyprint .kwd {
+  color: #017c9d;
+}
+pre.prettyprint .com {
+  color: #b8b6b1;
+}
+pre.prettyprint .typ {
+  color: #019d76;
+}
+pre.prettyprint .lit {
+  color: #15b8ae;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #414f5c;
+}
+pre.prettyprint .tag {
+  color: #017c9d;
+}
+pre.prettyprint .atn {
+  color: #019d76;
+}
+pre.prettyprint .atv {
+  color: #15b8ae;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #15b8ae;
+}
+pre.prettyprint .fun {
+  color: #017c9d;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Tribal
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #19191d;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #64aeb3;
+}
+pre.prettyprint .kwd {
+  color: #c43535;
+}
+pre.prettyprint .com {
+  color: #4a4a54;
+}
+pre.prettyprint .typ {
+  color: #5f5582;
+}
+pre.prettyprint .lit {
+  color: #E0DDEB;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #c43535;
+}
+pre.prettyprint .atn {
+  color: #5f5582;
+}
+pre.prettyprint .atv {
+  color: #E0DDEB;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #64aeb3;
+}
+pre.prettyprint .fun {
+  color: #c43535;
+}
+
+
+/* ------- END OF THEME ------- */
+

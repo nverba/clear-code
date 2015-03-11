@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Userscape
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #F5F8FC;
+  padding: 2em;
+  font-size:.7em;
+  color: #879BB0;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #879BB0;
+}
+
+pre.prettyprint .str {
+  color: #E3BD14;
+}
+pre.prettyprint .kwd {
+  color: #A8C0E0;
+}
+pre.prettyprint .com {
+  color: #bbbbbb;
+}
+pre.prettyprint .typ {
+  color: #355B8C;
+}
+pre.prettyprint .lit {
+  color: #E3BD14;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #879BB0;
+}
+pre.prettyprint .tag {
+  color: #A8C0E0;
+}
+pre.prettyprint .atn {
+  color: #355B8C;
+}
+pre.prettyprint .atv {
+  color: #E3BD14;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #E3BD14;
+}
+pre.prettyprint .fun {
+  color: #A8C0E0;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Kiwi
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #161a19;
+  padding: 2em;
+  font-size:.7em;
+  color: #EDEBE6;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #EDEBE6;
+}
+
+pre.prettyprint .str {
+  color: #a1e6c1;
+}
+pre.prettyprint .kwd {
+  color: #229986;
+}
+pre.prettyprint .com {
+  color: #354341;
+}
+pre.prettyprint .typ {
+  color: #95C72A;
+}
+pre.prettyprint .lit {
+  color: #0B6D5C;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #EDEBE6;
+}
+pre.prettyprint .tag {
+  color: #229986;
+}
+pre.prettyprint .atn {
+  color: #95C72A;
+}
+pre.prettyprint .atv {
+  color: #0B6D5C;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #a1e6c1;
+}
+pre.prettyprint .fun {
+  color: #229986;
+}
+
+
+/* ------- END OF THEME ------- */
+

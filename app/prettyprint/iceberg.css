@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Iceberg
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #323B3D;
+  padding: 2em;
+  font-size:.7em;
+  color: #BDD6DB;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #BDD6DB;
+}
+
+pre.prettyprint .str {
+  color: #FFFFFF;
+}
+pre.prettyprint .kwd {
+  color: #59C0E3;
+}
+pre.prettyprint .com {
+  color: #537178;
+}
+pre.prettyprint .typ {
+  color: #2D8DA1;
+}
+pre.prettyprint .lit {
+  color: #FFFFFF;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #BDD6DB;
+}
+pre.prettyprint .tag {
+  color: #59C0E3;
+}
+pre.prettyprint .atn {
+  color: #2D8DA1;
+}
+pre.prettyprint .atv {
+  color: #FFFFFF;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #FFFFFF;
+}
+pre.prettyprint .fun {
+  color: #59C0E3;
+}
+
+
+/* ------- END OF THEME ------- */
+

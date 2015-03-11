@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Laravel Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #000000;
+  padding: 2em;
+  font-size:.7em;
+  color: #ffffff;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #ffffff;
+}
+
+pre.prettyprint .str {
+  color: #FDCA49;
+}
+pre.prettyprint .kwd {
+  color: #FFC48C;
+}
+pre.prettyprint .com {
+  color: #615953;
+}
+pre.prettyprint .typ {
+  color: #FC6B0A;
+}
+pre.prettyprint .lit {
+  color: #FC580C;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #ffffff;
+}
+pre.prettyprint .tag {
+  color: #FFC48C;
+}
+pre.prettyprint .atn {
+  color: #FC6B0A;
+}
+pre.prettyprint .atv {
+  color: #FC580C;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #FDCA49;
+}
+pre.prettyprint .fun {
+  color: #FFC48C;
+}
+
+
+/* ------- END OF THEME ------- */
+

@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Hyrule
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #2d2c2b;
+  padding: 2em;
+  font-size:.7em;
+  color: #c0d5c1;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #c0d5c1;
+}
+
+pre.prettyprint .str {
+  color: #ce830d;
+}
+pre.prettyprint .kwd {
+  color: #f5c504;
+}
+pre.prettyprint .com {
+  color: #716d6a;
+}
+pre.prettyprint .typ {
+  color: #569e16;
+}
+pre.prettyprint .lit {
+  color: #90c93f;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #c0d5c1;
+}
+pre.prettyprint .tag {
+  color: #f5c504;
+}
+pre.prettyprint .atn {
+  color: #569e16;
+}
+pre.prettyprint .atv {
+  color: #90c93f;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #ce830d;
+}
+pre.prettyprint .fun {
+  color: #f5c504;
+}
+
+
+/* ------- END OF THEME ------- */
+

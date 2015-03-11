@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Spearmint
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #E1F0EE;
+  padding: 2em;
+  font-size:.7em;
+  color: #719692;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #719692;
+}
+
+pre.prettyprint .str {
+  color: #4CD7E0;
+}
+pre.prettyprint .kwd {
+  color: #69ADB5;
+}
+pre.prettyprint .com {
+  color: #93C7C0;
+}
+pre.prettyprint .typ {
+  color: #25808A;
+}
+pre.prettyprint .lit {
+  color: #4CD7E0;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #719692;
+}
+pre.prettyprint .tag {
+  color: #69ADB5;
+}
+pre.prettyprint .atn {
+  color: #25808A;
+}
+pre.prettyprint .atv {
+  color: #4CD7E0;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #4CD7E0;
+}
+pre.prettyprint .fun {
+  color: #69ADB5;
+}
+
+
+/* ------- END OF THEME ------- */
+

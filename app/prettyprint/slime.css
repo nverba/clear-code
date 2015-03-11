@@ -1,0 +1,66 @@
+
+
+/* ------ START OF THEME ------ */
+
+/*
+ * Slime
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre.prettyprint {
+  background-color: #292D30;
+  padding: 2em;
+  font-size:.7em;
+  color: #FFFFFF;
+}
+
+pre.prettyprint code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre.prettyprint .pln {
+  color: #FFFFFF;
+}
+
+pre.prettyprint .str {
+  color: #FAFFDB;
+}
+pre.prettyprint .kwd {
+  color: #FAFFDB;
+}
+pre.prettyprint .com {
+  color: #4F5A63;
+}
+pre.prettyprint .typ {
+  color: #9FB3C2;
+}
+pre.prettyprint .lit {
+  color: #C7AF3F;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+  color: #FFFFFF;
+}
+pre.prettyprint .tag {
+  color: #FAFFDB;
+}
+pre.prettyprint .atn {
+  color: #9FB3C2;
+}
+pre.prettyprint .atv {
+  color: #C7AF3F;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+  color: #FAFFDB;
+}
+pre.prettyprint .fun {
+  color: #FAFFDB;
+}
+
+
+/* ------- END OF THEME ------- */
+
