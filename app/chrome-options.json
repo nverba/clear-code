@@ -29,6 +29,17 @@
           20
         ]
       }, {
+        "id": "line_height", "label": "Line height", "type": "options", "default": 1.2,
+        "options": [
+          0.8,
+          1,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2
+        ]
+      }, {
         "id": "margin_size", "label": "Margin size", "type": "number", "default": 100, "debounce": 50
       }, {
         "id": "font_family", "label": "Font family", "type": "options", "default": "source code pro",
