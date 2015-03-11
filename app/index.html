@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html  ng-app="ClearCodeApp" ng-strict-di="" ng-csp="">
+<html  ng-app="ClearCodeApp" ng-strict-di ng-csp>
 
-  <head ng-controller="ClearCodeHeadController">
+  <head ng-controller="ClearCodeHeadController as head">
 
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="clear-code-frame.css">
     <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
-    <link rel="stylesheet" ng-href="{{ css.highlighter }}" >
+    <link rel="stylesheet" ng-href="{{ head.css.highlighter }}" >
 
     <style>
       pre {
