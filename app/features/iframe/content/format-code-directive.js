@@ -15,25 +15,23 @@
             content = '',
             saved_state = pre.innerHTML;
 
-        function highlightCodeFn() {
+        scope.viewer.formatCode = function viewerFormatCode(name) {
 
-          pre.className = scope.viewer.active_beau ? 'prettyprint lang-' + scope.viewer.active_beau : "prettyprint";
-          pre.className += options.categories.theme_options.line_nums ? ' linenums ' : '';
-          prettyPrint();
-        }
-
-        scope.viewer.formatCode = function formatCodeFn(name) {
           options.ready.then(function () {
 
-            pre.innerHTML  = saved_state;
+            scope.viewer.active_beau = name ? name : false;
+
+            pre.innerHTML = saved_state;
+            pre.className = scope.viewer.active_beau ? 'prettyprint lang-' + scope.viewer.active_beau : "prettyprint";
+            pre.className += options.categories.theme_options.line_nums ? ' linenums ' : '';
+
             code = document.getElementById('clear-code-code');
             code.style['font-family'] = options.categories.theme_options.font_family;
             code.style['font-size']   = options.categories.theme_options.font_size + 'px';
             code.style['line-height'] = options.categories.theme_options.line_height + 'em';
             code.textContent = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
-            scope.viewer.active_beau = name ? name : false;
 
-            highlightCodeFn();
+            prettyPrint();
 
           });
         };
