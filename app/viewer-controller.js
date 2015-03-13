@@ -16,13 +16,14 @@
       this.menu_margin = this.margins < 40 ? 0 : this.margins - 40;
 
       $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
+
         if (angular.equals(newValue, oldValue)) { return; }
 
         this.margins     = options.categories.theme_options.margin_size;
         this.menu_margin = this.margins < 40 ? 0 : this.margins - 40;
 
-        $scope.formatCode();
-      });
+        this.formatCode();
+      }.bind(this));
     }.bind(this));
   }
 

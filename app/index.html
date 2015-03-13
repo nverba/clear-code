@@ -38,10 +38,10 @@
       <span id="clear-code-title">Clear Code</span>
 
       Beautifiers:
-      <button ng-click="formatCode('js')" ng-class="{ active: viewer.active_beau === 'js'}">JS</button>
-      <button ng-click="formatCode('html')" ng-class="{ active: viewer.active_beau === 'html'}">HTML</button>
-      <button ng-click="formatCode('css')" ng-class="{ active: viewer.active_beau === 'css'}">CSS</button>
-      <button ng-click="formatCode()" style="margin-right: {{ viewer.menu_margin }}px"><i class="icon-ccw"></i></button>
+      <button ng-click="viewer.formatCode('js')" ng-class="{ active: viewer.active_beau === 'js'}">JS</button>
+      <button ng-click="viewer.formatCode('html')" ng-class="{ active: viewer.active_beau === 'html'}">HTML</button>
+      <button ng-click="viewer.formatCode('css')" ng-class="{ active: viewer.active_beau === 'css'}">CSS</button>
+      <button ng-click="viewer.formatCode()" style="margin-right: {{ viewer.menu_margin }}px"><i class="icon-ccw"></i></button>
 
       <button ng-click="viewer.closeFrame()" id='close'>
         <i class="icon-close"></i>
@@ -49,7 +49,7 @@
     </header>
 
     <div id="clear-code-container" style="left: {{ viewer.margins }}px; right: {{ viewer.margins }}px">
-      <pre id='clear-code-pre' format-code="viewer.formatCode()"><code id='clear-code-code'></code></pre>
+      <pre id='clear-code-pre' format-code><code id='clear-code-code'></code></pre>
     </div>
 
     <script src="libs/angular/angular.js"></script>

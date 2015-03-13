@@ -15,14 +15,14 @@
             content = '',
             saved_state = pre.innerHTML;
 
-        function highlight_code() {
+        function highlightCodeFn() {
 
-          pre.className = scope.active_beau ? 'prettyprint lang-' + scope.active_beau : "prettyprint";
+          pre.className = scope.viewer.active_beau ? 'prettyprint lang-' + scope.viewer.active_beau : "prettyprint";
           pre.className += options.categories.theme_options.line_nums ? ' linenums ' : '';
           prettyPrint();
         }
 
-        scope.formatCode = function format_code(name) {
+        scope.viewer.formatCode = function formatCodeFn(name) {
           options.ready.then(function () {
 
             pre.innerHTML  = saved_state;
@@ -31,9 +31,9 @@
             code.style['font-size']   = options.categories.theme_options.font_size + 'px';
             code.style['line-height'] = options.categories.theme_options.line_height + 'em';
             code.textContent = name ? window[name + '_beautify'](content, options.categories[name + '_options']) : content;
-            scope.active_beau = name ? name : false;
+            scope.viewer.active_beau = name ? name : false;
 
-            highlight_code();
+            highlightCodeFn();
 
           });
         };
@@ -42,7 +42,7 @@
 
           if (request.openCode) {
             content = JSON.parse(request.openCode);
-            scope.formatCode();
+            scope.viewer.formatCode();
           }
         });
 
