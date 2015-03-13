@@ -15,13 +15,20 @@
     }, 50);
   }
 
+  function updateCss(response) {
+
+    css_link.href             = '../../prettyprint/' + response.theme_options.css_theme + '.css';
+    code.style['font-family'] = response.theme_options.font_family;
+    code.style['font-size']   = response.theme_options.font_size + 'px';
+    code.style['line-height'] = response.theme_options.line_height + 'em';
+    pre.className             = response.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
+
+    goPrint();
+  }
+
   chrome.storage.local.get({ 'clearCodeOptions': { theme_options: { css_theme: 'default.css' }}}, function (response) {
 
-    css_link.href             = '../../prettyprint/' + response.clearCodeOptions.theme_options.css_theme + '.css';
-    code.style['font-family'] = response.clearCodeOptions.theme_options.font_family;
-    code.style['font-size']   = response.clearCodeOptions.theme_options.font_size + 'px';
-    code.style['line-height'] = response.clearCodeOptions.theme_options.line_height + 'em';
-    pre.className             = response.clearCodeOptions.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
+    updateCss(response.clearCodeOptions);
   });
 
   chrome.storage.onChanged.addListener(function(changes, namespace) {
@@ -30,13 +37,7 @@
     pre.innerHTML = sample;
     code = document.getElementById('clear-code-code');
 
-    css_link.href             = '../../prettyprint/' + changes.clearCodeOptions.newValue.theme_options.css_theme + '.css';
-    code.style['font-family'] = changes.clearCodeOptions.newValue.theme_options.font_family;
-    code.style['font-size']   = changes.clearCodeOptions.newValue.theme_options.font_size + 'px';
-    code.style['line-height'] = changes.clearCodeOptions.newValue.theme_options.line_height + 'em';
-    pre.className             = changes.clearCodeOptions.newValue.theme_options.line_nums ? "prettyprint linenums" : "prettyprint";
-
-    goPrint();
+    updateCss(changes.clearCodeOptions.newValue);
   });
 
   goPrint();
