@@ -1,6 +1,6 @@
 (function () { 'use strict';
 
-  angular.module('ClearCodeApp').controller('ClearCodeHeadController', ['$scope', 'options', ClearCodeHeadControllerFn]);
+  angular.module('ClearCodeApp').controller('HeadController', ['$scope', 'options', ClearCodeHeadControllerFn]);
 
   function ClearCodeHeadControllerFn($scope, options) {
 
