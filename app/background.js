@@ -46,18 +46,21 @@ function handleMessage(request, sender, sendResponse) {
   if (request.injectClearCodeFrame) {
 
     chrome.tabs.insertCSS({
-      file: 'clear-code.css'
+      file: 'iframe.css'
     });
     chrome.tabs.executeScript({
-      file: 'viewer.js'
+      file: 'iframe.js'
     });
     sendResponse({ response: "success" });
   }
 
   if (request.injectClearCodeButtons) {
 
+    chrome.tabs.insertCSS({
+      file: 'buttons.css'
+    });
     chrome.tabs.executeScript({
-      file: 'clear-code-injected-buttons.js'
+      file: 'buttons.js'
     });
     sendResponse({ response: "success" });
   }
