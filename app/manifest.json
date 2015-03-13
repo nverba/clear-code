@@ -26,5 +26,5 @@
     "persistent": true
   },
   "options_page": "libs/angular-chrome-options/dist/index.html",
-  "web_accessible_resources": ["icons/icon19.png", "index.html"]
+  "web_accessible_resources": ["icons/icon19.png", "features/iframe/content/index.html"]
 }

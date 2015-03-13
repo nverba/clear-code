@@ -1,3 +1,5 @@
+// sample.html & sample.js are resources for the options page, see chrome-options.json
+
 (function () { 'use strict';
 
   var css_link = document.getElementById('css_theme');
@@ -15,7 +17,7 @@
 
   chrome.storage.local.get({ 'clearCodeOptions': { theme_options: { css_theme: 'default.css' }}}, function (response) {
 
-    css_link.href             = 'prettyprint/' + response.clearCodeOptions.theme_options.css_theme + '.css';
+    css_link.href             = '../../prettyprint/' + response.clearCodeOptions.theme_options.css_theme + '.css';
     code.style['font-family'] = response.clearCodeOptions.theme_options.font_family;
     code.style['font-size']   = response.clearCodeOptions.theme_options.font_size + 'px';
     code.style['line-height'] = response.clearCodeOptions.theme_options.line_height + 'em';
@@ -28,7 +30,7 @@
     pre.innerHTML = sample;
     code = document.getElementById('clear-code-code');
 
-    css_link.href             = 'prettyprint/' + changes.clearCodeOptions.newValue.theme_options.css_theme + '.css';
+    css_link.href             = '../../prettyprint/' + changes.clearCodeOptions.newValue.theme_options.css_theme + '.css';
     code.style['font-family'] = changes.clearCodeOptions.newValue.theme_options.font_family;
     code.style['font-size']   = changes.clearCodeOptions.newValue.theme_options.font_size + 'px';
     code.style['line-height'] = changes.clearCodeOptions.newValue.theme_options.line_height + 'em';

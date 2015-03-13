@@ -1,7 +1,7 @@
 
 var iframe = document.createElement('iframe');
     iframe.id = 'clear-code-frame';
-    iframe.src = chrome.extension.getURL("index.html");
+    iframe.src = chrome.extension.getURL("features/iframe/content/index.html");
     iframe.scrolling = "no";
     iframe.style.display = 'none';
 

@@ -168,7 +168,7 @@
         "type": "iframe",
         "width": "100%",
         "height": "300px",
-        "src": "../../../sample.html"
+        "src": "../../../features/sample/sample.html"
       }, {
         "type": "span",
         "content": [{

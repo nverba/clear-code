@@ -5,47 +5,47 @@
 
 @font-face {
   font-family: "source code pro";
-  src: url("fonts/SourceCodePro-Regular.ttf");
+  src: url("../../../fonts/SourceCodePro-Regular.ttf");
 }
 
 @font-face {
   font-family: "roboto-black-italic";
-  src: url("fonts/Roboto-BlackItalic.ttf");
+  src: url("../../../fonts/Roboto-BlackItalic.ttf");
 }
 
 @font-face {
   font-family: "roboto";
-  src: url("fonts/Roboto-Regular.ttf");
+  src: url("../../../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "open dyslexic mono";
-  src: url("fonts/OpenDyslexicMono-Regular.otf");
+  src: url("../../../fonts/OpenDyslexicMono-Regular.otf");
 }
 
 @font-face {
   font-family: "cutive mono";
-  src: url("fonts/Cutive_Mono/CutiveMono-Regular.ttf");
+  src: url("../../../fonts/Cutive_Mono/CutiveMono-Regular.ttf");
 }
 
 @font-face {
   font-family: "droid sans mono";
-  src: url("fonts/Droid_Sans_Mono/DroidSansMono.ttf");
+  src: url("../../../fonts/Droid_Sans_Mono/DroidSansMono.ttf");
 }
 
 @font-face {
   font-family: "share tech mono";
-  src: url("fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf");
+  src: url("../../../fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf");
 }
 
 @font-face {
   font-family: "ubuntu mono";
-  src: url("fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
+  src: url("../../../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
 }
 
 @font-face {
   font-family: "ubuntu mono bold";
-  src: url("fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
+  src: url("../../../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
 }
 
 header#clear-code-header {

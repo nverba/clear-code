@@ -3,17 +3,17 @@ var tabs = {};
 function injectButtons() {
 
   chrome.tabs.executeScript({
-    file: 'inject-buttons.js'
+    file: 'features/injectors/inject-buttons.js'
   });
   chrome.tabs.executeScript({
-    file: 'inject-frame.js'
+    file: 'features/injectors/inject-frame.js'
   });
 }
 
 function openSelection(context, tab) {
 
   chrome.tabs.executeScript({
-    file: 'inject-frame.js'
+    file: 'features/injectors/inject-frame.js'
   }, function () {
     if (tabs[tab.id] === 'unlocked') {
       chrome.tabs.sendMessage(tab.id, { openSelection: true });
@@ -46,10 +46,10 @@ function handleMessage(request, sender, sendResponse) {
   if (request.injectClearCodeFrame) {
 
     chrome.tabs.insertCSS({
-      file: 'iframe.css'
+      file: 'features/iframe/iframe.css'
     });
     chrome.tabs.executeScript({
-      file: 'iframe.js'
+      file: 'features/iframe/iframe.js'
     });
     sendResponse({ response: "success" });
   }
@@ -57,10 +57,10 @@ function handleMessage(request, sender, sendResponse) {
   if (request.injectClearCodeButtons) {
 
     chrome.tabs.insertCSS({
-      file: 'buttons.css'
+      file: 'features/buttons/buttons.css'
     });
     chrome.tabs.executeScript({
-      file: 'buttons.js'
+      file: 'features/buttons/buttons.js'
     });
     sendResponse({ response: "success" });
   }
