@@ -12,15 +12,18 @@
 
     options.ready.then(function () {
 
-      this.margins     = options.categories.theme_options.margin_size;
-      this.menu_margin = this.margins < 40 ? 0 : this.margins - 40;
+      function setMargins(context) {
+        context.margins     = options.categories.theme_options.margin_size;
+        context.menu_margin = context.margins < 40 ? 0 : context.margins - 40;
+      }
+
+      setMargins(this);
 
       $scope.$watch( function (){ return options.categories.theme_options; }, function (newValue, oldValue) {
 
         if (angular.equals(newValue, oldValue)) { return; }
 
-        this.margins     = options.categories.theme_options.margin_size;
-        this.menu_margin = this.margins < 40 ? 0 : this.margins - 40;
+        setMargins(this);
 
         this.formatCode();
       }.bind(this));
