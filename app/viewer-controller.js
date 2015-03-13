@@ -1,8 +1,8 @@
 (function () { 'use strict';
 
-  angular.module('ClearCodeApp').controller('ClearCodeFrameController', ['$scope', 'options', ClearCodeFrameControllerFn]);
+  angular.module('ClearCodeApp').controller('ViewerController', ['$scope', 'options', ViewerControllerFn]);
 
-  function ClearCodeFrameControllerFn($scope, options) {
+  function ViewerControllerFn($scope, options) {
 
     this.closeFrame = function () {
       chrome.runtime.sendMessage({ tabMessage: { frameDisplay: 'none' }});
