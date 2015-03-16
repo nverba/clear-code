@@ -1,4 +1,4 @@
-node_modules/
+/node_modules/
 /notes.txt
 /app/libs/
-npm-debug.log
+/npm-debug.log
