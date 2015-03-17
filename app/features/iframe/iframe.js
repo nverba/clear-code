@@ -7,7 +7,7 @@ var iframe = document.createElement('iframe');
 
 document.body.appendChild(iframe);
 
-chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
   if (request.frameDisplay) {
 

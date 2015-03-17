@@ -1,30 +1,21 @@
 var del           = require('del');
 var gulp          = require('gulp');
-var karma         = require('karma').server;
 var zip           = require('gulp-zip');
 var dependencies  = Object.keys(require('./package.json').dependencies);
 var libs          = dependencies.map(function (dep) {
                       return  './node_modules/' + dep + '/**/*.*';
                     });
 
-gulp.task('karma', function (done) {
-  karma.start(karmaCommonConf, done);
+var tests_libs    = ['node_modules/chai/chai.js'];
+
+gulp.task('test:insert', function (cb) {
+  return gulp.src(libs, { base: 'node_modules' })
+    .pipe(gulp.dest('app/libs'));
 });
 
-var karmaCommonConf = {
+gulp.task('test:flush', function (cb) {
 
-  browsers: ['Chrome', 'Chromium'],
-  frameworks: ['mocha', 'chai', 'chai-as-promised'],
-  autoWatch: true,
-  files: [
-    'app/**/**/*.js'
-  ],
-  client: {
-    mocha: {
-      ui: 'bdd'
-    }
-  }
-};
+});
 
 gulp.task('app:clean', function (cb) {
   del(['app/libs/**'], cb);
@@ -35,7 +26,7 @@ gulp.task('app:build', ['app:clean'], function () {
     .pipe(gulp.dest('app/libs'));
 });
 
-gulp.task('zip', function () {
+gulp.task('zip', ['test:flush'], function () {
   return gulp.src('app/**/*')
     .pipe(zip('app.zip'))
     .pipe(gulp.dest(''));
