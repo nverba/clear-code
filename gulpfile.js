@@ -18,7 +18,7 @@ gulp.task('app:build', ['app:clean'], function () {
     .pipe(gulp.dest('app/libs'));
 });
 
-gulp.task('zip', ['test:flush'], function () {
+gulp.task('app:zip', function () {
   return gulp.src('app/**/*')
     .pipe(zip('app.zip'))
     .pipe(gulp.dest(''));
