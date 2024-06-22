@@ -2,9 +2,9 @@
   "name": "Clear Code",
   "short_name": "Clear Code",
   "description": "Syntax highlighting and beautifiers for embedded code examples.",
-  "version": "1.1.0",
-  "manifest_version": 2,
-  "browser_action": {
+  "version": "1.2.0",
+  "manifest_version": 3,
+  "action": {
     "default_icon": {
       "19": "icons/icon19.png",
       "38": "icons/icon38.png"
@@ -19,12 +19,18 @@
   "permissions": [
     "activeTab",
     "storage",
+    "scripting",
     "contextMenus"
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "service_worker": "service_worker.js",
+    "type": "module"
   },
   "options_page": "libs/angular-chrome-options/dist/index.html",
-  "web_accessible_resources": ["icons/icon19.png", "features/iframe/content/index.html"]
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/icon19.png", "features/iframe/content/index.html"],
+      "matches": ["*://*/*"]
+    }
+  ]
 }

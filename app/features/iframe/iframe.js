@@ -1,7 +1,7 @@
 
 var iframe = document.createElement('iframe');
     iframe.id = 'clear-code-frame';
-    iframe.src = chrome.extension.getURL("features/iframe/content/index.html");
+    iframe.src = chrome.runtime.getURL("features/iframe/content/index.html");
     iframe.scrolling = "no";
     iframe.style.display = 'none';
 
@@ -16,7 +16,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   }
 
   if (request.openSelection) {
-
     chrome.runtime.sendMessage({ tabMessage: { openCode: JSON.stringify(window.getSelection().toString()) }});
     iframe.style.display = 'block';
   }

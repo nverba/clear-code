@@ -8,7 +8,7 @@
     options.ready.then(function () {
 
       $scope.$watch( function (){ return options.categories.theme_options; }, angular.bind(this, function () {
-        this.css.highlighter = chrome.extension.getURL( '../../prettyprint/' + options.categories.theme_options.css_theme + '.css' );
+        this.css.highlighter = chrome.runtime.getURL( '../../prettyprint/' + options.categories.theme_options.css_theme + '.css' );
       } ));
 
     }.bind(this));

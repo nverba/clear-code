@@ -3,7 +3,7 @@ var elements = document.getElementsByTagName('pre');
 function injectButton(element) {
   var div    = document.createElement('div');
   var button = document.createElement('button');
-  button.style.backgroundImage = 'url(' + chrome.extension.getURL("icons/icon19.png") + ')';
+  button.style.backgroundImage = 'url(' + chrome.runtime.getURL("icons/icon19.png") + ')';
   button.className = 'clear-code';
   button.innerText = "Open with Clear Code";
   button.onclick = function () {
